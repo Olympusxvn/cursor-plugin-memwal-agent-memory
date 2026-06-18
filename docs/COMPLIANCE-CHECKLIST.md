@@ -1,8 +1,8 @@
 # Compliance checklist — Cursor Marketplace
 
-**Plugin:** `memwal-agent-memory` v0.1.4  
-**Reference:** [Plugins Reference](https://cursor.com/docs/reference/plugins) · [Rules](https://cursor.com/docs/rules) · [Skills](https://cursor.com/docs/skills)  
-**Full audit:** [PLUGINS-REFERENCE-AUDIT.md](./PLUGINS-REFERENCE-AUDIT.md) · [RULES-REFERENCE-AUDIT.md](./RULES-REFERENCE-AUDIT.md) · [SKILLS-REFERENCE-AUDIT.md](./SKILLS-REFERENCE-AUDIT.md)  
+**Plugin:** `memwal-agent-memory` v0.1.5  
+**Reference:** [Plugins](https://cursor.com/docs/reference/plugins) · [Rules](https://cursor.com/docs/rules) · [Skills](https://cursor.com/docs/skills) · [Hooks](https://cursor.com/docs/hooks)  
+**Audits:** [PLUGINS](./PLUGINS-REFERENCE-AUDIT.md) · [RULES](./RULES-REFERENCE-AUDIT.md) · [SKILLS](./SKILLS-REFERENCE-AUDIT.md) · [HOOKS](./HOOKS-REFERENCE-AUDIT.md)  
 **Publisher:** Vo Quoc Cuong · vo.q.cuong@gmail.com  
 **Last verified:** 2026-06-18
 
@@ -101,6 +101,19 @@ Legend: **☑** Pass · **◐** Optional / not required · **☐** Open
 | G3 | sync without Walrus env | `skipReason: offline` | ☑ | Pro Local default |
 | G4 | + Walrus Sync | sync promotes | ◐ | Optional tier — not re-tested 2026-06-18 |
 | G5 | `/setup` command | Setup skill path | ☑ | command + skill wired |
+
+---
+
+## H. Hooks (optional component)
+
+Per [Cursor Hooks](https://cursor.com/docs/hooks) — **not required** for this plugin. Full audit: [HOOKS-REFERENCE-AUDIT.md](./HOOKS-REFERENCE-AUDIT.md).
+
+| # | Check | Pass | Evidence |
+|---|-------|------|----------|
+| H1 | Hooks not required for Marketplace submit | ☑ | Plugins Reference submission checklist |
+| H2 | No invalid `hooks` path in manifest | ☑ | field omitted intentionally |
+| H3 | Policy without hooks (rule/skills/MCP) | ☑ | E2, E4, B6 |
+| H4 | Future hook plan documented | ☑ | HOOKS-REFERENCE-AUDIT §7 |
 
 ---
 

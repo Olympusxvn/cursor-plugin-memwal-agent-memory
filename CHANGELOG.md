@@ -2,6 +2,12 @@
 
 All notable changes to this Cursor plugin are documented here.
 
+## [0.1.5] — 2026-06-18
+
+### Hooks compliance
+
+- **Hooks Reference audit:** [docs/HOOKS-REFERENCE-AUDIT.md](docs/HOOKS-REFERENCE-AUDIT.md) — hooks optional; intentionally omitted; policy via rule/skills/MCP
+
 ## [0.1.4] — 2026-06-18
 
 ### Skills compliance

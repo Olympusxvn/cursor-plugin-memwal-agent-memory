@@ -39,7 +39,7 @@ Required layout vs this repo:
 | `README.md` | ✓ | Pass |
 | `LICENSE` | MIT root | Pass |
 | `agents/` | — (optional) | N/A |
-| `hooks/` | — (optional) | N/A |
+| `hooks/` | — (optional, not shipped) | N/A — see [HOOKS-REFERENCE-AUDIT.md](./HOOKS-REFERENCE-AUDIT.md) |
 
 \*Logo resolves on GitHub raw URL. File bytes are JPEG with `.png` extension — works in browsers; consider re-export as true PNG or SVG for polish (non-blocking).
 
