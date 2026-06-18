@@ -2,6 +2,12 @@
 
 All notable changes to this Cursor plugin are documented here.
 
+## [0.1.7] — 2026-06-18
+
+### Submission review
+
+- **[docs/SUBMISSION-REVIEW.md](docs/SUBMISSION-REVIEW.md)** — final pre-submit quality review (PASS, 0 blocking issues)
+
 ## [0.1.6] — 2026-06-18
 
 ### MCP compliance
