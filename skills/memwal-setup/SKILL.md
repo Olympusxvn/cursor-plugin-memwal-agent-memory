@@ -73,7 +73,7 @@ For pure cloud MemWal (`memwal_remember`, analyze, restore): official plugin at 
 | Symptom | Fix |
 |---------|-----|
 | No MCP tools | Reload Cursor; confirm plugin enabled; Node 20+ |
-| `npx` package not found | Publish/install `@memwalpp/mcp` on npm; or use `mcp.local.example.json` for monorepo dev |
+| `npx` package not found | Install [@memwalpp/mcp@0.1.0](https://www.npmjs.com/package/@memwalpp/mcp); or use [mcp.dev.json](../../mcp.dev.json) for monorepo dev |
 | Empty recall | Consistent `MEMWAL_NAMESPACE` |
 | `skipReason: offline` on sync | Pro Local only — add Walrus env in MCP settings |
 | Owner key rejected | Use delegate key only |

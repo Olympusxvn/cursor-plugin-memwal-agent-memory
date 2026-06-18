@@ -2,6 +2,13 @@
 
 All notable changes to this Cursor plugin are documented here.
 
+## [0.1.4] — 2026-06-18
+
+### Skills compliance
+
+- **Skills Reference audit:** [docs/SKILLS-REFERENCE-AUDIT.md](docs/SKILLS-REFERENCE-AUDIT.md) vs [cursor.com/docs/skills](https://cursor.com/docs/skills)
+- **memwal-setup:** troubleshooting — live npm link; `mcp.dev.json` dev path
+
 ## [0.1.3] — 2026-06-18
 
 ### Compliance & publisher metadata

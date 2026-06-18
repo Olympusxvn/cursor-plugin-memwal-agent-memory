@@ -111,6 +111,7 @@ Comparison: [Comparison.md](https://github.com/Olympusxvn/memwal-agent-memory/bl
 
 | Doc | Content |
 |-----|---------|
+| [docs/SKILLS-REFERENCE-AUDIT.md](docs/SKILLS-REFERENCE-AUDIT.md) | Audit vs [Cursor Skills](https://cursor.com/docs/skills) |
 | [docs/RULES-REFERENCE-AUDIT.md](docs/RULES-REFERENCE-AUDIT.md) | Audit vs [Cursor Rules](https://cursor.com/docs/rules) |
 | [docs/PLUGINS-REFERENCE-AUDIT.md](docs/PLUGINS-REFERENCE-AUDIT.md) | Audit vs [Cursor Plugins Reference](https://cursor.com/docs/reference/plugins) |
 | [docs/COMPLIANCE-CHECKLIST.md](docs/COMPLIANCE-CHECKLIST.md) | Pre-submit validation (signed off 2026-06-18) |

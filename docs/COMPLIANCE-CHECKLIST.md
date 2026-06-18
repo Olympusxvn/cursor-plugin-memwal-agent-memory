@@ -1,8 +1,8 @@
 # Compliance checklist — Cursor Marketplace
 
-**Plugin:** `memwal-agent-memory` v0.1.3  
-**Reference:** [Plugins Reference](https://cursor.com/docs/reference/plugins)  
-**Full audit:** [PLUGINS-REFERENCE-AUDIT.md](./PLUGINS-REFERENCE-AUDIT.md)  
+**Plugin:** `memwal-agent-memory` v0.1.4  
+**Reference:** [Plugins Reference](https://cursor.com/docs/reference/plugins) · [Rules](https://cursor.com/docs/rules) · [Skills](https://cursor.com/docs/skills)  
+**Full audit:** [PLUGINS-REFERENCE-AUDIT.md](./PLUGINS-REFERENCE-AUDIT.md) · [RULES-REFERENCE-AUDIT.md](./RULES-REFERENCE-AUDIT.md) · [SKILLS-REFERENCE-AUDIT.md](./SKILLS-REFERENCE-AUDIT.md)  
 **Publisher:** Vo Quoc Cuong · vo.q.cuong@gmail.com  
 **Last verified:** 2026-06-18
 
@@ -31,8 +31,8 @@ Legend: **☑** Pass · **◐** Optional / not required · **☐** Open
 | # | Check | Pass | Evidence |
 |---|-------|------|----------|
 | B1 | Rule — `description`, `alwaysApply` | ☑ | `rules/memwal-hybrid-memory.mdc` · [RULES-REFERENCE-AUDIT.md](./RULES-REFERENCE-AUDIT.md) |
-| B2 | Skill `memwal-setup` — `name`, `description` | ☑ | frontmatter valid |
-| B3 | Skill `memwal-workflows` — `name`, `description` | ☑ | frontmatter valid |
+| B2 | Skill `memwal-setup` — `name`, `description` | ☑ | [SKILLS-REFERENCE-AUDIT.md](./SKILLS-REFERENCE-AUDIT.md) |
+| B3 | Skill `memwal-workflows` — `name`, `description` | ☑ | name matches folder; auto-invoke OK |
 | B4 | Command `setup` — `name`, `description` | ☑ | `commands/setup.md` |
 | B5 | No broken file references in manifest | ☑ | skills, rules, commands, mcp.json exist |
 | B6 | Plugin scope — memory MCP only | ☑ | 9 hybrid tools; no chain writes |
