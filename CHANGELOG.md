@@ -2,6 +2,13 @@
 
 All notable changes to this Cursor plugin are documented here.
 
+## [0.1.6] — 2026-06-18
+
+### MCP compliance
+
+- **MCP Reference audit:** [docs/MCP-REFERENCE-AUDIT.md](docs/MCP-REFERENCE-AUDIT.md) vs [cursor.com/docs/mcp](https://cursor.com/docs/mcp)
+- **`mcp.json`:** add explicit `"type": "stdio"` per STDIO configuration docs
+
 ## [0.1.5] — 2026-06-18
 
 ### Hooks compliance

@@ -1,8 +1,8 @@
 # Compliance checklist — Cursor Marketplace
 
-**Plugin:** `memwal-agent-memory` v0.1.5  
-**Reference:** [Plugins](https://cursor.com/docs/reference/plugins) · [Rules](https://cursor.com/docs/rules) · [Skills](https://cursor.com/docs/skills) · [Hooks](https://cursor.com/docs/hooks)  
-**Audits:** [PLUGINS](./PLUGINS-REFERENCE-AUDIT.md) · [RULES](./RULES-REFERENCE-AUDIT.md) · [SKILLS](./SKILLS-REFERENCE-AUDIT.md) · [HOOKS](./HOOKS-REFERENCE-AUDIT.md)  
+**Plugin:** `memwal-agent-memory` v0.1.6  
+**Reference:** [Plugins](https://cursor.com/docs/reference/plugins) · [Rules](https://cursor.com/docs/rules) · [Skills](https://cursor.com/docs/skills) · [Hooks](https://cursor.com/docs/hooks) · [MCP](https://cursor.com/docs/mcp)  
+**Audits:** [PLUGINS](./PLUGINS-REFERENCE-AUDIT.md) · [RULES](./RULES-REFERENCE-AUDIT.md) · [SKILLS](./SKILLS-REFERENCE-AUDIT.md) · [HOOKS](./HOOKS-REFERENCE-AUDIT.md) · [MCP](./MCP-REFERENCE-AUDIT.md)  
 **Publisher:** Vo Quoc Cuong · vo.q.cuong@gmail.com  
 **Last verified:** 2026-06-18
 
@@ -50,6 +50,8 @@ Legend: **☑** Pass · **◐** Optional / not required · **☐** Open
 | C5 | `MEMWAL_MCP_DATA_DIR` uses `${userHome}` | ☑ | mcp.json |
 | C6 | Walrus creds = user MCP env only | ☑ | README + skills |
 | C7 | Local smoke: 9 tools after restart | ☑ | CHANGELOG 0.1.1 |
+| C8 | `"type": "stdio"` per [MCP docs](https://cursor.com/docs/mcp) | ☑ | mcp.json v0.1.6 |
+| C9 | MCP audit complete | ☑ | [MCP-REFERENCE-AUDIT.md](./MCP-REFERENCE-AUDIT.md) |
 
 ---
 

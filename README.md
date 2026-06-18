@@ -111,6 +111,7 @@ Comparison: [Comparison.md](https://github.com/Olympusxvn/memwal-agent-memory/bl
 
 | Doc | Content |
 |-----|---------|
+| [docs/MCP-REFERENCE-AUDIT.md](docs/MCP-REFERENCE-AUDIT.md) | Audit vs [Cursor MCP](https://cursor.com/docs/mcp) |
 | [docs/HOOKS-REFERENCE-AUDIT.md](docs/HOOKS-REFERENCE-AUDIT.md) | Audit vs [Cursor Hooks](https://cursor.com/docs/hooks) — optional, N/A |
 | [docs/SKILLS-REFERENCE-AUDIT.md](docs/SKILLS-REFERENCE-AUDIT.md) | Audit vs [Cursor Skills](https://cursor.com/docs/skills) |
 | [docs/RULES-REFERENCE-AUDIT.md](docs/RULES-REFERENCE-AUDIT.md) | Audit vs [Cursor Rules](https://cursor.com/docs/rules) |

@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "memwal-agent-memory": {
+      "type": "stdio",
       "command": "npx",
       "args": ["-y", "@memwalpp/mcp@0.1.0", "--transport", "stdio"],
       "env": {
