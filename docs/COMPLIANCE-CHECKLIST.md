@@ -1,6 +1,6 @@
 # Compliance checklist — Cursor Marketplace
 
-**Plugin:** `memwal-agent-memory` v0.1.6  
+**Plugin:** `memwal-agent-memory` v0.1.9  
 **Reference:** [Plugins](https://cursor.com/docs/reference/plugins) · [Rules](https://cursor.com/docs/rules) · [Skills](https://cursor.com/docs/skills) · [Hooks](https://cursor.com/docs/hooks) · [MCP](https://cursor.com/docs/mcp)  
 **Audits:** [PLUGINS](./PLUGINS-REFERENCE-AUDIT.md) · [RULES](./RULES-REFERENCE-AUDIT.md) · [SKILLS](./SKILLS-REFERENCE-AUDIT.md) · [HOOKS](./HOOKS-REFERENCE-AUDIT.md) · [MCP](./MCP-REFERENCE-AUDIT.md)  
 **Publisher:** Vo Quoc Cuong · vo.q.cuong@gmail.com  
@@ -21,7 +21,7 @@ Legend: **☑** Pass · **◐** Optional / not required · **☐** Open
 | A5 | `author.name` set | ☑ | Vo Quoc Cuong |
 | A6 | `license` = `MIT` | ☑ | manifest + LICENSE |
 | A7 | `repository` URL matches public GitHub repo | ☑ | Olympusxvn/cursor-plugin-memwal-agent-memory |
-| A8 | `logo` = `assets/logo.png` and file committed | ☑ | 1024×1024; raw GitHub URL 200 |
+| A8 | `logo` = `assets/logo.png` and file committed | ☑ | 1024×1024 true PNG (O1, v0.1.9) |
 | A9 | All paths relative — no `..`, no absolute paths | ☑ | manifest paths only `./…` |
 
 ---
@@ -101,7 +101,7 @@ Legend: **☑** Pass · **◐** Optional / not required · **☐** Open
 | G1 | Pro Local remember + recall | Hit returned | ☑ | 2026-06-18 local Cursor |
 | G2 | getStats | Local row count | ☑ | same session |
 | G3 | sync without Walrus env | `skipReason: offline` | ☑ | Pro Local default |
-| G4 | + Walrus Sync | sync promotes | ◐ | Optional tier — not re-tested 2026-06-18 |
+| G4 | + Walrus Sync | sync promotes | ☑ | Live E2E 2026-06-18 — [WALRUS-SYNC-G4-TEST.md](./WALRUS-SYNC-G4-TEST.md) |
 | G5 | `/setup` command | Setup skill path | ☑ | command + skill wired |
 
 ---

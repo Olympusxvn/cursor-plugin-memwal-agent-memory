@@ -148,12 +148,12 @@ Production `mcp.json`:
 | L2 | `docs/REPO-PLAN.md` referenced `mcp.local.example.json` | **Fixed** — updated to `mcp.dev.json` |
 | L3 | `LICENSE` copyright vs author | **Fixed** — `Copyright (c) 2026 Vo Quoc Cuong` |
 
-### Optional polish
+### Optional polish — resolved in v0.1.9
 
-| ID | Issue | Recommended fix |
-|----|-------|-----------------|
-| O1 | `assets/logo.png` is JPEG bytes (1024×1024) | Re-export as true PNG or SVG 1:1 |
-| O2 | + Walrus Sync E2E (compliance G4) not re-tested | Run once with delegate env; note in CHANGELOG |
+| ID | Issue | Status |
+|----|-------|--------|
+| O1 | `assets/logo.png` JPEG bytes | **Fixed** — true PNG 1024×1024 |
+| O2 | + Walrus Sync E2E (G4) | **Fixed** — live delegate test PASS ([WALRUS-SYNC-G4-TEST.md](./WALRUS-SYNC-G4-TEST.md)) |
 
 ---
 
@@ -176,7 +176,7 @@ Production `mcp.json`:
 
 **Recommendation: APPROVE — no resubmit required.**
 
-Plugin **memwal-agent-memory v0.1.8** satisfies the submission quality bar:
+Plugin **memwal-agent-memory v0.1.9** satisfies the submission quality bar:
 
 - Valid manifest and discoverable components  
 - Complete frontmatter on rules, skills, and commands  
@@ -198,5 +198,5 @@ Plugin **memwal-agent-memory v0.1.8** satisfies the submission quality bar:
 | Role | Name | Date |
 |------|------|------|
 | Reviewer | Vo Quoc Cuong (maintainer) | 2026-06-18 |
-| Plugin version reviewed | 0.1.8 | 2026-06-18 |
-| Git commit at review | `c981af2` (0.1.6); L1–L3 fixed in 0.1.8 | 2026-06-18 |
+| Plugin version reviewed | 0.1.9 | 2026-06-18 |
+| Git commit at review | L1–L3 in 0.1.8; O1–O2 in 0.1.9 | 2026-06-18 |

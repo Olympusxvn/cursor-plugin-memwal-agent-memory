@@ -2,6 +2,14 @@
 
 All notable changes to this Cursor plugin are documented here.
 
+## [0.1.9] — 2026-06-18
+
+### Submission review fix list (O1–O2)
+
+- **O1:** `assets/logo.png` re-exported as true PNG (1024×1024 RGB; was JPEG bytes with `.png` extension)
+- **O2:** + Walrus Sync G4 live E2E — delegate env → `remember` → `sync` → `verify(checkWalrus)` against `https://relayer.memory.walrus.xyz` — **PASS** ([docs/WALRUS-SYNC-G4-TEST.md](docs/WALRUS-SYNC-G4-TEST.md))
+- **[docs/COMPLIANCE-CHECKLIST.md](docs/COMPLIANCE-CHECKLIST.md):** G4 marked ☑
+
 ## [0.1.8] — 2026-06-18
 
 ### Submission review fix list (L1–L3)

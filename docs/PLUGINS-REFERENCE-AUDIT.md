@@ -18,7 +18,7 @@
 | **Documentation & legal** | **Pass** — README, LICENSE, PRIVACY, SECURITY |
 | **Local functional test** | **Pass** — 9 tools, remember/recall (2026-06-18) |
 | **Marketplace submission** | **Submitted** — awaiting Cursor review |
-| **Optional improvements** | Logo true PNG/SVG; Walrus Sync E2E (G4) |
+| **Optional improvements** | — (O1 logo + O2 G4 resolved in v0.1.9) |
 
 **Conclusion:** Plugin meets the official submission checklist. No blocking gaps remain for review.
 
