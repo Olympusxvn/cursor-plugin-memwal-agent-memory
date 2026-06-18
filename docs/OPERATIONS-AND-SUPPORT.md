@@ -117,10 +117,10 @@ After any change to:
 
 ---
 
-## Contacts (fill before submit)
+## Contacts
 
 | Role | Name | Contact |
 |------|------|---------|
-| Maintainer | Olympusxvn | GitHub |
-| Security | | See SECURITY.md |
-| Cursor legal | | legal@cursor.com (incidents only) |
+| Maintainer | Vo Quoc Cuong | vo.q.cuong@gmail.com · [@Olympusxvn](https://github.com/Olympusxvn) |
+| Security | Vo Quoc Cuong | vo.q.cuong@gmail.com · [SECURITY.md](./SECURITY.md) |
+| Cursor legal | Anysphere | legal@cursor.com (incidents only) |

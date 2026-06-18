@@ -21,7 +21,7 @@ Step-by-step guide to publish **memwal-agent-memory** on [cursor.com/marketplace
 |---|------|------------------|
 | 1.1 | Copy plugin to local plugins dir | Already at `~/.cursor/plugins/local/memwal-agent-memory/` |
 | 1.2 | Test with npm MCP (post-publish) | Enable plugin → MCP green → 9 tools |
-| 1.3 | Pre-publish dev test | Use `mcp.local.example.json` + upstream `pnpm mcp:build` |
+| 1.3 | Pre-publish dev test | Use [mcp.dev.json](../mcp.dev.json) + upstream `pnpm mcp:build` |
 | 1.4 | Run compliance checklist | [COMPLIANCE-CHECKLIST.md](./COMPLIANCE-CHECKLIST.md) — all items ☑ |
 | 1.5 | Smoke test | remember → recall verification phrase |
 | 1.6 | Walrus Sync test (optional) | delegate env in MCP settings → sync → verify |

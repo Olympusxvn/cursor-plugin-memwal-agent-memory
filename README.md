@@ -12,7 +12,8 @@ Local SQLite for fast, private project memory. Optional Walrus durability via [W
 | **MCP server** | [`@memwalpp/mcp@0.1.0`](https://www.npmjs.com/package/@memwalpp/mcp) |
 | **License** | MIT (permissive — Cursor Marketplace compatible) |
 | **Upstream** | [memwal-agent-memory](https://github.com/Olympusxvn/memwal-agent-memory) |
-| **Marketplace** | Publisher application **submitted** (2026-06-18) — [review pending](https://cursor.com/marketplace/publish) |
+| **Publisher** | Vo Quoc Cuong · vo.q.cuong@gmail.com · [@Olympusxvn](https://github.com/Olympusxvn) |
+| **Marketplace** | Application **submitted** (2026-06-18) — [review pending](https://cursor.com/marketplace/publish) |
 
 ---
 
@@ -110,8 +111,10 @@ Comparison: [Comparison.md](https://github.com/Olympusxvn/memwal-agent-memory/bl
 
 | Doc | Content |
 |-----|---------|
+| [docs/RULES-REFERENCE-AUDIT.md](docs/RULES-REFERENCE-AUDIT.md) | Audit vs [Cursor Rules](https://cursor.com/docs/rules) |
+| [docs/PLUGINS-REFERENCE-AUDIT.md](docs/PLUGINS-REFERENCE-AUDIT.md) | Audit vs [Cursor Plugins Reference](https://cursor.com/docs/reference/plugins) |
+| [docs/COMPLIANCE-CHECKLIST.md](docs/COMPLIANCE-CHECKLIST.md) | Pre-submit validation (signed off 2026-06-18) |
 | [docs/SUBMIT-PLAYBOOK.md](docs/SUBMIT-PLAYBOOK.md) | Marketplace submission steps |
-| [docs/COMPLIANCE-CHECKLIST.md](docs/COMPLIANCE-CHECKLIST.md) | Pre-submit validation |
 | [docs/PUBLISHER-OBLIGATIONS.md](docs/PUBLISHER-OBLIGATIONS.md) | Legal and policy duties |
 | [docs/OPERATIONS-AND-SUPPORT.md](docs/OPERATIONS-AND-SUPPORT.md) | Support and incident response |
 | [docs/DO-NOT.md](docs/DO-NOT.md) | Actions that risk delisting |

@@ -2,7 +2,7 @@
 
 How **memwal-agent-memory** handles data. Required for transparent Marketplace listing.
 
-**Last updated:** 2026-06-16
+**Last updated:** 2026-06-18
 
 ---
 

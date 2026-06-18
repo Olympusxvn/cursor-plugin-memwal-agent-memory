@@ -40,9 +40,10 @@ Pin `@memwalpp/mcp` semver in `mcp.json` — update when upstream security patch
 
 **Do not** open public GitHub issues for exploitable vulnerabilities.
 
-1. Email maintainer (configure before public launch): **security contact TBD — use GitHub private vulnerability reporting when enabled**
-2. Include: description, reproduction, impact, suggested fix
-3. Allow 90 days coordinated disclosure before public details
+1. Email **vo.q.cuong@gmail.com** (subject: `[memwal-agent-memory] security`)
+2. Or use **GitHub private vulnerability reporting** on [cursor-plugin-memwal-agent-memory](https://github.com/Olympusxvn/cursor-plugin-memwal-agent-memory) when enabled
+3. Include: description, reproduction, impact, suggested fix
+4. Allow 90 days coordinated disclosure before public details
 
 If the issue affects Cursor Marketplace integration or user data at scale, also notify **legal@cursor.com** per Publisher Terms.
 

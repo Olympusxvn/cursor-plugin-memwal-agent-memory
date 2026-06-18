@@ -2,6 +2,17 @@
 
 All notable changes to this Cursor plugin are documented here.
 
+## [0.1.3] — 2026-06-18
+
+### Compliance & publisher metadata
+
+- **Plugins Reference audit:** [docs/PLUGINS-REFERENCE-AUDIT.md](docs/PLUGINS-REFERENCE-AUDIT.md) — full checklist vs [cursor.com/docs/reference/plugins](https://cursor.com/docs/reference/plugins)
+- **`plugin.json` author:** Vo Quoc Cuong · vo.q.cuong@gmail.com
+- **SECURITY.md / OPERATIONS / PRIVACY:** security and support contacts filled
+- **COMPLIANCE-CHECKLIST.md:** signed off with evidence (G4 Walrus Sync optional ◐)
+- **Rules Reference audit:** [docs/RULES-REFERENCE-AUDIT.md](docs/RULES-REFERENCE-AUDIT.md) vs [cursor.com/docs/rules](https://cursor.com/docs/rules)
+- **Rule update:** `memwal-hybrid-memory.mdc` — Setup section → memwal-setup / `/setup`
+
 ## [0.1.2] — 2026-06-18
 
 ### Shipped

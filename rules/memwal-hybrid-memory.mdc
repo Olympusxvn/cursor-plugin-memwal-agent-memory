@@ -53,3 +53,7 @@ Do not call marketplace / chain write tools unless the user explicitly requests 
 ## Smoke test
 
 On request "test memwal memory": `remember` a short verification phrase, then `recall` it.
+
+## Setup
+
+For install, tier selection (Pro Local vs + Walrus Sync), or MCP troubleshooting, use skill **memwal-setup** or command **/setup** — do not invent credentials or read `~/.memwal/credentials.json`.
