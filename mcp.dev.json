@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "memwal-agent-memory": {
+      "command": "node",
+      "args": [
+        "C:/Users/Admin/memwal-agent-memory/packages/mcp/dist/bundle.mjs",
+        "--transport",
+        "stdio"
+      ],
+      "env": {
+        "MEMWAL_NAMESPACE": "cursor",
+        "MEMWAL_MCP_DATA_DIR": "${userHome}/.memwal-agent-memory/mcp"
+      }
+    }
+  }
+}
