@@ -39,7 +39,7 @@ Use this checklist before submitting to [cursor.com/marketplace/publish](https:/
 |---|-------|------|
 | C1 | `mcp.json` valid — `mcpServers.memwal-agent-memory` entry | ☐ |
 | C2 | Uses `npx -y @memwalpp/mcp@0.1.0` (pinned semver) | ☐ |
-| C3 | **npm package published and installable** on clean machine | ☐ |
+| C3 | **npm package published and installable** on clean machine | ☑ |
 | C4 | No secrets in `mcp.json` — only safe defaults in `env` | ☐ |
 | C5 | `MEMWAL_MCP_DATA_DIR` uses `${userHome}` placeholder | ☐ |
 | C6 | Walrus credentials documented as user MCP env — not in repo | ☐ |

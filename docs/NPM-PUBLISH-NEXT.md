@@ -1,37 +1,27 @@
-# Publish @memwalpp/mcp to npm — next step
+# Publish @memwalpp/mcp to npm — completed
 
-**Status:** Bundle ready, `npm pack` + `npx ./memwalpp-mcp-0.1.0.tgz` verified. **Registry publish blocked:** `npm whoami` → not logged in.
+**Status:** **Done** (2026-06-18)
 
-## Publish (you run once)
+| Step | Result |
+|------|--------|
+| npm org `@memwalpp` | Created — owner `olympusxvn` |
+| Publish `@memwalpp/mcp@0.1.0` | https://www.npmjs.com/package/@memwalpp/mcp |
+| Verify install | `npx -y @memwalpp/mcp@0.1.0 --transport stdio` |
+| Cursor Marketplace | Publisher application **submitted** — review pending |
 
-```bash
-npm login
-# scope @memwalpp must exist on npmjs.com — create org or use personal scope
-
-cd /path/to/memwal-agent-memory/packages/mcp
-pnpm build && pnpm test
-npm publish --access public
-```
-
-## Verify from registry
+## Verify anytime
 
 ```bash
+npm view @memwalpp/mcp version
 npx -y @memwalpp/mcp@0.1.0 --transport stdio
 ```
 
-## After publish
+## After Marketplace approval
 
-1. Restore plugin `mcp.json` to `npx` (already in GitHub repo)
-2. Reload Cursor
-3. Submit [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish) with:
-   `https://github.com/Olympusxvn/cursor-plugin-memwal-agent-memory`
+1. Announce listing on upstream [memwal-agent-memory README](https://github.com/Olympusxvn/memwal-agent-memory)
+2. Monitor [plugin Issues](https://github.com/Olympusxvn/cursor-plugin-memwal-agent-memory/issues)
+3. Request **re-index** when bumping `plugin.json` / `mcp.json` versions
 
-## Local Cursor test (before npm)
+## Local dev (optional)
 
-Use [mcp.dev.json](../mcp.dev.json) — point `node` at upstream `packages/mcp/dist/bundle.mjs` after `pnpm --filter @memwalpp/mcp build`.
-
-1. **Cmd+Q** quit Cursor → reopen
-2. Settings → Plugins → enable **memwal-agent-memory**
-3. Settings → MCP → green
-4. Chat: *What MCP tools do you have?* → 9 tools
-5. Smoke: remember → recall
+Use [mcp.dev.json](../mcp.dev.json) — point `node` at upstream `packages/mcp/dist/bundle.mjs` after `pnpm --filter @memwalpp/mcp build`. See [LOCAL-DEV-MCP.md](./LOCAL-DEV-MCP.md).

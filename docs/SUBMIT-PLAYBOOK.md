@@ -8,9 +8,9 @@ Step-by-step guide to publish **memwal-agent-memory** on [cursor.com/marketplace
 
 | # | Task | Owner | Done |
 |---|------|-------|------|
-| 0.1 | Publish `@memwalpp/mcp@0.1.0` to npm public | Upstream monorepo | ☐ |
-| 0.2 | Verify `npx -y @memwalpp/mcp@0.1.0 --transport stdio` on clean machine | You | ☐ |
-| 0.3 | Create public GitHub repo `cursor-plugin-memwal-agent-memory` | You | ☐ |
+| 0.1 | Publish `@memwalpp/mcp@0.1.0` to npm public | Upstream monorepo | ☑ |
+| 0.2 | Verify `npx -y @memwalpp/mcp@0.1.0 --transport stdio` on clean machine | You | ☑ |
+| 0.3 | Create public GitHub repo `cursor-plugin-memwal-agent-memory` | You | ☑ |
 | 0.4 | MIT license committed (no GPL/AGPL) | This repo | ☑ |
 
 ---
@@ -45,6 +45,8 @@ Step-by-step guide to publish **memwal-agent-memory** on [cursor.com/marketplace
 ---
 
 ## Phase 3 — Submit application
+
+**Status:** Application **submitted** 2026-06-18. Awaiting Cursor team review.
 
 1. Go to **[cursor.com/marketplace/publish](https://cursor.com/marketplace/publish)**
 2. Sign in with GitHub account tied to **Olympusxvn**

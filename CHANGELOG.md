@@ -2,6 +2,21 @@
 
 All notable changes to this Cursor plugin are documented here.
 
+## [0.1.2] — 2026-06-18
+
+### Shipped
+
+- **`@memwalpp/mcp@0.1.0` on npm** — https://www.npmjs.com/package/@memwalpp/mcp (org `@memwalpp`)
+- **Cursor Marketplace publisher application submitted** — repo `https://github.com/Olympusxvn/cursor-plugin-memwal-agent-memory`
+- Production `mcp.json` unchanged: `npx -y @memwalpp/mcp@0.1.0 --transport stdio`
+
+### Docs
+
+- [docs/NPM-PUBLISH-NEXT.md](docs/NPM-PUBLISH-NEXT.md) — marked complete
+- [docs/SUBMIT-PLAYBOOK.md](docs/SUBMIT-PLAYBOOK.md) — Phase 0 checkboxes; Phase 3 submitted
+- [docs/COMPLIANCE-CHECKLIST.md](docs/COMPLIANCE-CHECKLIST.md) — C3 npm installable ☑
+- Upstream [memwal-agent-memory](https://github.com/Olympusxvn/memwal-agent-memory) docs updated with npm + plugin links
+
 ## [0.1.1] — 2026-06-18
 
 ### Verified

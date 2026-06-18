@@ -9,9 +9,10 @@ Local SQLite for fast, private project memory. Optional Walrus durability via [W
 | | |
 |---|---|
 | **Plugin name** | `memwal-agent-memory` |
-| **MCP server** | `@memwalpp/mcp` |
+| **MCP server** | [`@memwalpp/mcp@0.1.0`](https://www.npmjs.com/package/@memwalpp/mcp) |
 | **License** | MIT (permissive — Cursor Marketplace compatible) |
 | **Upstream** | [memwal-agent-memory](https://github.com/Olympusxvn/memwal-agent-memory) |
+| **Marketplace** | Publisher application **submitted** (2026-06-18) — [review pending](https://cursor.com/marketplace/publish) |
 
 ---
 
@@ -136,9 +137,9 @@ This plugin's `mcp.json` runs:
 npx -y @memwalpp/mcp@0.1.0 --transport stdio
 ```
 
-**`@memwalpp/mcp` must be published to the public npm registry** before marketplace users can install. See upstream [npm publish guide](https://github.com/Olympusxvn/memwal-agent-memory/blob/main/docs/product/npm-publish.md).
+**Status (2026-06-18):** `@memwalpp/mcp@0.1.0` is **live** on npm ([registry](https://www.npmjs.com/package/@memwalpp/mcp)). Cursor Marketplace **publisher application submitted** — awaiting team review.
 
-For local development before npm publish, use [mcp.local.example.json](mcp.local.example.json).
+For local development without npm cache, use [mcp.dev.json](mcp.dev.json) + upstream monorepo build — see [docs/LOCAL-DEV-MCP.md](docs/LOCAL-DEV-MCP.md).
 
 ---
 
