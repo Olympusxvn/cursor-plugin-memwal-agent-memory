@@ -2,6 +2,23 @@
 
 All notable changes to this Cursor plugin are documented here.
 
+## [0.1.1] — 2026-06-18
+
+### Verified
+
+- **Local Cursor test passed:** plugin enabled, MCP green, 9 tools, remember/recall smoke OK (via upstream `dist/bundle.mjs` dev wiring).
+- **Upstream npm bundle ready:** `@memwalpp/mcp@0.1.0` tarball verified (`npm pack` + `npx`); registry publish pending `npm login`.
+
+### Added
+
+- [docs/NPM-PUBLISH-NEXT.md](docs/NPM-PUBLISH-NEXT.md) — publish + marketplace submit steps after `npm publish`.
+- [docs/LOCAL-DEV-MCP.md](docs/LOCAL-DEV-MCP.md) + `mcp.dev.json` — test before npm registry (see prior commit).
+
+### Notes
+
+- GitHub repo live: https://github.com/Olympusxvn/cursor-plugin-memwal-agent-memory
+- Production `mcp.json` remains `npx -y @memwalpp/mcp@0.1.0` for marketplace; use `mcp.dev.json` locally until npm publish.
+
 ## [0.1.0] — 2026-06-16
 
 ### Added

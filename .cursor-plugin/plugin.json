@@ -1,6 +1,6 @@
 {
   "name": "memwal-agent-memory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hybrid agent memory for Cursor — local SQLite speed, optional Walrus durability, privacy gates, and verifiable recall via MCP.",
   "author": {
     "name": "Olympusxvn",
