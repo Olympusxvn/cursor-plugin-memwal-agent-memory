@@ -1,0 +1,35 @@
+{
+  "name": "memwal-agent-memory",
+  "version": "0.1.0",
+  "description": "Hybrid agent memory for Cursor — local SQLite speed, optional Walrus durability, privacy gates, and verifiable recall via MCP.",
+  "author": {
+    "name": "Olympusxvn",
+    "url": "https://github.com/Olympusxvn"
+  },
+  "homepage": "https://github.com/Olympusxvn/cursor-plugin-memwal-agent-memory",
+  "repository": "https://github.com/Olympusxvn/cursor-plugin-memwal-agent-memory",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "mcp",
+    "agent-memory",
+    "walrus",
+    "memwal",
+    "local-first",
+    "hybrid-memory",
+    "cursor",
+    "ai-development"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "mcp",
+    "memory",
+    "walrus",
+    "privacy",
+    "verifiable"
+  ],
+  "skills": "./skills/",
+  "rules": "./rules/",
+  "commands": "./commands/",
+  "mcpServers": "./mcp.json"
+}

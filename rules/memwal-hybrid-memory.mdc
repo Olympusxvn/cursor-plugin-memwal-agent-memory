@@ -1,0 +1,55 @@
+---
+description: Use memwal-agent-memory MCP for persistent project memory — remember decisions, recall context, optional Walrus sync. Enable when the MCP server is connected.
+alwaysApply: false
+---
+
+# MemWal Agent Memory — hybrid MCP
+
+When the **memwal-agent-memory** MCP server is available, use it to build **persistent context for AI-assisted development**.
+
+## When to call `remember`
+
+- User states an architecture decision, convention, or trade-off to keep
+- You resolve a non-obvious bug — store **symptom → cause → fix** (brief)
+- Stable identifiers: package IDs, env var names, API contracts, namespace rules
+
+## When to call `recall` or `search`
+
+- User continues work from a prior session or asks "what did we decide…"
+- Before large refactors — check stored decisions
+- User mentions project-specific terms, Walrus, MemWal, or MCP namespace
+
+## When to call `sync`
+
+- User explicitly wants **durable / Walrus** backup and MemWal credentials are configured
+- After important `remember` calls when user uses **+ Walrus Sync** tier
+- Do **not** auto-sync on every message — hybrid flow is intentional
+
+## When to call `verify` / `getLineage`
+
+- User asks whether memory is **verifiable** or wants proof layers
+- Trust / audit questions about a specific `memoryId`
+
+## Do not `remember`
+
+- Secrets, API keys, tokens, passwords, wallet private keys, PII
+- Full file contents — summarize and include path
+- Ephemeral chat or greetings
+
+## Namespace
+
+Use the same `MEMWAL_NAMESPACE` for remember and recall (default from MCP env: often `cursor` or project name).
+
+## Privacy
+
+- Default tier is **Pro Local** — data stays in user SQLite (`MEMWAL_MCP_DATA_DIR`)
+- Never bypass redaction or quality gates; MCP rejects bypass flags
+- For Walrus tier, only **delegate keys** — never owner keys
+
+## Out of scope
+
+Do not call marketplace / chain write tools unless the user explicitly requests on-chain actions. This plugin registers memory tools only.
+
+## Smoke test
+
+On request "test memwal memory": `remember` a short verification phrase, then `recall` it.
