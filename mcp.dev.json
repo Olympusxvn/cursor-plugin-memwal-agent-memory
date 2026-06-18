@@ -1,9 +1,10 @@
 {
+  "_comment": "Local dev only: copy to mcp.json while testing upstream MCP builds. Replace REPO_ROOT with your memwal-agent-memory clone path. Restore production mcp.json (npx @memwalpp/mcp) before Marketplace releases.",
   "mcpServers": {
     "memwal-agent-memory": {
       "command": "node",
       "args": [
-        "C:/Users/Admin/memwal-agent-memory/packages/mcp/dist/bundle.mjs",
+        "REPO_ROOT/packages/mcp/dist/bundle.mjs",
         "--transport",
         "stdio"
       ],

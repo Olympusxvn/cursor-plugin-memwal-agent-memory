@@ -1,6 +1,6 @@
-# Local dev MCP config (before npm publish)
+# Local dev MCP config
 
-Use this **only** until `@memwalpp/mcp@0.1.0` is on npm.
+Use this when developing or debugging the **upstream** `@memwalpp/mcp` package from a monorepo clone. Marketplace and end users should use production `mcp.json` (`npx -y @memwalpp/mcp@0.1.0`).
 
 1. Build upstream bundle:
 
@@ -9,13 +9,15 @@ cd /path/to/memwal-agent-memory
 pnpm --filter @memwalpp/mcp build
 ```
 
-2. Copy `mcp.dev.json` → `mcp.json` and set your absolute path to `dist/bundle.mjs`.
+2. Copy `mcp.dev.json` → `mcp.json` and replace `REPO_ROOT` with your absolute path to the monorepo root.
 
-3. Reload Cursor (Cmd+Q).
+3. Reload Cursor (Cmd+Q / quit fully).
 
-After `npm publish`, restore production `mcp.json`:
+4. When done, restore production `mcp.json`:
 
 ```json
 "command": "npx",
 "args": ["-y", "@memwalpp/mcp@0.1.0", "--transport", "stdio"]
 ```
+
+See also [docs/NPM-PUBLISH-NEXT.md](./NPM-PUBLISH-NEXT.md) for npm publish status.

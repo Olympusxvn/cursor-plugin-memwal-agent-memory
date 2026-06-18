@@ -47,14 +47,14 @@ cursor-plugin-memwal-agent-memory/
 ├── LICENSE
 ├── README.md
 ├── mcp.json
-└── mcp.local.example.json
+└── mcp.dev.json
 ```
 
 ---
 
 ## Critical prerequisite — npm publish
 
-**Do not submit to Cursor Marketplace until `@memwalpp/mcp@0.1.0` is on npm public.**
+**Status (2026-06-18): `@memwalpp/mcp@0.1.0` is live on npm.**
 
 Marketplace users run:
 
@@ -62,7 +62,12 @@ Marketplace users run:
 npx -y @memwalpp/mcp@0.1.0 --transport stdio
 ```
 
-If the package is missing, review will fail functional testing.
+Verify after upstream bumps:
+
+```bash
+npm view @memwalpp/mcp version
+npx -y @memwalpp/mcp@<pin> --transport stdio
+```
 
 ### Publish sequence (upstream monorepo)
 
@@ -85,13 +90,13 @@ gh repo create Olympusxvn/cursor-plugin-memwal-agent-memory --public --source=. 
 
 ---
 
-## Local testing (before npm publish)
+## Local testing (upstream MCP dev)
 
 1. Copy plugin to `~/.cursor/plugins/local/memwal-agent-memory/`
-2. Build upstream MCP: `pnpm mcp:build` in memwal-agent-memory clone
-3. Temporarily replace `mcp.json` with contents of `mcp.local.example.json` (set `REPO_ROOT`)
+2. Build upstream MCP: `pnpm --filter @memwalpp/mcp build` in memwal-agent-memory clone
+3. Copy `mcp.dev.json` → `mcp.json` and replace `REPO_ROOT` with your monorepo path
 4. Reload Cursor → verify 9 tools → smoke test remember/recall
-5. Restore production `mcp.json` before marketplace submit
+5. Restore production `mcp.json` before marketplace release bumps
 
 ---
 

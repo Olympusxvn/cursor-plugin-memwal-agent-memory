@@ -140,13 +140,13 @@ Production `mcp.json`:
 
 ## 8. Prioritized fix list
 
-### Low — fix when convenient (non-blocking)
+### Low — resolved in v0.1.8
 
-| ID | Issue | Recommended fix |
-|----|-------|-----------------|
-| L1 | `mcp.local.example.json` still says *"before @memwalpp/mcp is published"* | Delete or merge into `mcp.dev.json` |
-| L2 | `docs/REPO-PLAN.md` references `mcp.local.example.json` | Update to `mcp.dev.json` |
-| L3 | `LICENSE` copyright `Olympusxvn` vs author `Vo Quoc Cuong` | Align copyright line with publisher name |
+| ID | Issue | Status |
+|----|-------|--------|
+| L1 | Stale `mcp.local.example.json` | **Fixed** — deleted; dev config in `mcp.dev.json` |
+| L2 | `docs/REPO-PLAN.md` referenced `mcp.local.example.json` | **Fixed** — updated to `mcp.dev.json` |
+| L3 | `LICENSE` copyright vs author | **Fixed** — `Copyright (c) 2026 Vo Quoc Cuong` |
 
 ### Optional polish
 
@@ -176,7 +176,7 @@ Production `mcp.json`:
 
 **Recommendation: APPROVE — no resubmit required.**
 
-Plugin **memwal-agent-memory v0.1.6** satisfies the submission quality bar:
+Plugin **memwal-agent-memory v0.1.8** satisfies the submission quality bar:
 
 - Valid manifest and discoverable components  
 - Complete frontmatter on rules, skills, and commands  
@@ -189,8 +189,7 @@ Plugin **memwal-agent-memory v0.1.6** satisfies the submission quality bar:
 1. Wait for Cursor team review / listing approval  
 2. Monitor [plugin Issues](https://github.com/Olympusxvn/cursor-plugin-memwal-agent-memory/issues)  
 3. After approval — update README from “review pending” to live Marketplace link  
-4. Request **re-index** when bumping `plugin.json` / `mcp.json` versions  
-5. Optionally address L1–L3 in a patch release before public listing
+4. Request **re-index** when bumping `plugin.json` / `mcp.json` versions
 
 ---
 
@@ -199,5 +198,5 @@ Plugin **memwal-agent-memory v0.1.6** satisfies the submission quality bar:
 | Role | Name | Date |
 |------|------|------|
 | Reviewer | Vo Quoc Cuong (maintainer) | 2026-06-18 |
-| Plugin version reviewed | 0.1.6 | 2026-06-18 |
-| Git commit at review | `c981af2` | 2026-06-18 |
+| Plugin version reviewed | 0.1.8 | 2026-06-18 |
+| Git commit at review | `c981af2` (0.1.6); L1–L3 fixed in 0.1.8 | 2026-06-18 |

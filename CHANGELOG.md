@@ -2,6 +2,15 @@
 
 All notable changes to this Cursor plugin are documented here.
 
+## [0.1.8] — 2026-06-18
+
+### Submission review fix list (L1–L3)
+
+- **L1:** Remove stale `mcp.local.example.json`; consolidate dev wiring in `mcp.dev.json` (`REPO_ROOT` placeholder)
+- **L2:** [docs/REPO-PLAN.md](docs/REPO-PLAN.md) — `mcp.dev.json` + npm live status
+- **L3:** [LICENSE](LICENSE) copyright aligned with publisher (Vo Quoc Cuong)
+- **[docs/LOCAL-DEV-MCP.md](docs/LOCAL-DEV-MCP.md)** — post-npm dev workflow
+
 ## [0.1.7] — 2026-06-18
 
 ### Submission review
