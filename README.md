@@ -166,7 +166,7 @@ For pure cloud MemWal (`memwal_remember`, `memwal_analyze`, `memwal_restore`):
 curl -sL https://memory.walrus.xyz/skills/setup
 ```
 
-Comparison: [Comparison.md](https://github.com/Olympusxvn/memwal-agent-memory/blob/main/Comparison.md)
+Comparison: [docs/COMPARISON.md](docs/COMPARISON.md) (mirror) · [upstream Comparison.md](https://github.com/Olympusxvn/memwal-agent-memory/blob/main/Comparison.md)
 
 ---
 

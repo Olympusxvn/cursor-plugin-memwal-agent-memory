@@ -2,6 +2,12 @@
 
 All notable changes to this Cursor plugin are documented here.
 
+## [0.1.10] — 2026-06-18
+
+### Documentation
+
+- **[docs/COMPARISON.md](docs/COMPARISON.md)** — mirror of upstream nine-tool comparison (official Walrus Memory vs `@memwalpp/mcp`)
+
 ## [0.1.9] — 2026-06-18
 
 ### Submission review fix list (O1–O2)
