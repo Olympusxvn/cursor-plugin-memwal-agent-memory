@@ -1,19 +1,116 @@
 # MemWal Agent Memory — Cursor Plugin
 
-**Hybrid agent memory for AI development in Cursor.**
+[![npm @memwalpp/mcp](https://img.shields.io/npm/v/@memwalpp/mcp?style=flat-square&color=3b82f6&label=%40memwalpp%2Fmcp)](https://www.npmjs.com/package/@memwalpp/mcp)
+[![License: MIT](https://img.shields.io/badge/license-MIT-64748b?style=flat-square)](LICENSE)
+[![Cursor Plugin](https://img.shields.io/badge/Cursor-Marketplace%20submitted-8b5cf6?style=flat-square)](https://cursor.com/marketplace/publish)
 
-Local SQLite for fast, private project memory. Optional Walrus durability via [Walrus Memory (MemWal)](https://docs.wal.app). Server-enforced redaction and quality gates before any cloud promote.
+> **Your AI remembers the project — on your machine first, on Walrus when you choose.**  
+> Cursor plugin + MCP wiring for **hybrid agent memory**: local SQLite, optional Walrus durability, verifiable recall.
 
-> *A fast, private, verifiable hybrid memory layer that any MCP-compatible agent can use.*
+```
+remember → local SQLite     sync → redact + gate → Walrus (optional)
+search   → ranked hybrid    verify → proof layers you can audit
+```
 
 | | |
 |---|---|
-| **Plugin name** | `memwal-agent-memory` |
-| **MCP server** | [`@memwalpp/mcp@0.1.0`](https://www.npmjs.com/package/@memwalpp/mcp) |
-| **License** | MIT (permissive — Cursor Marketplace compatible) |
+| **Plugin** | `memwal-agent-memory` v0.1.9 |
+| **MCP server** | [`@memwalpp/mcp@0.1.0`](https://www.npmjs.com/package/@memwalpp/mcp) via `npx` |
 | **Upstream** | [memwal-agent-memory](https://github.com/Olympusxvn/memwal-agent-memory) |
-| **Publisher** | Vo Quoc Cuong · vo.q.cuong@gmail.com · [@Olympusxvn](https://github.com/Olympusxvn) |
+| **Publisher** | Vo Quoc Cuong · [@Olympusxvn](https://github.com/Olympusxvn) |
 | **Marketplace** | Application **submitted** (2026-06-18) — [review pending](https://cursor.com/marketplace/publish) |
+
+---
+
+## Why use this?
+
+- **Hybrid** — **Pro Local** works with Node 20+ only: decisions, conventions, and bugfixes stay on disk. Call **`sync`** when you want Walrus backup — not on every message.
+- **Privacy** — Server-enforced redaction and quality gates before cloud promote. Rules and skills tell the agent: no secrets in memory, delegate keys in MCP env only.
+- **Verifiable** — Layered **`verify`** (local proof → Walrus blob → optional chain read). Live Walrus Sync tested for marketplace compliance ([G4 evidence](docs/WALRUS-SYNC-G4-TEST.md)).
+- **Agent experience** — Plugin bundles **9 MCP tools**, a hybrid-memory **rule**, **setup/workflow skills**, and **`/setup`** — so Cursor agents know *when* to remember and recall.
+
+Wraps Mysten's MemWal SDK through our open-source stack. **Does not fork** [Walrus Memory](https://docs.wal.app).
+
+---
+
+## Quick start for Cursor
+
+**Requires:** [Node.js 20+](https://nodejs.org/) · `@memwalpp/mcp@0.1.0` on [npm](https://www.npmjs.com/package/@memwalpp/mcp) (live)
+
+### Option A — Cursor Marketplace (recommended after approval)
+
+1. Install **MemWal Agent Memory** from the Cursor Marketplace
+2. **Settings → Plugins** — enable the plugin
+3. **Settings → MCP** — confirm `memwal-agent-memory` is connected
+4. Fully restart Cursor (Cmd+Q on macOS)
+5. In chat: `/setup` or *“Remember: MemWal smoke test OK.”*
+
+### Option B — Local plugin (today)
+
+Copy this repo to `~/.cursor/plugins/local/memwal-agent-memory/`, enable in **Settings → Plugins**, restart Cursor.
+
+Production MCP wiring (already in `mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "memwal-agent-memory": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@memwalpp/mcp@0.1.0", "--transport", "stdio"],
+      "env": {
+        "MEMWAL_NAMESPACE": "cursor",
+        "MEMWAL_MCP_DATA_DIR": "${userHome}/.memwal-agent-memory/mcp"
+      }
+    }
+  }
+}
+```
+
+### Option C — MCP only (no plugin rules/skills)
+
+Paste the JSON above into your project **`.cursor/mcp.json`** or global MCP settings.
+
+### + Walrus Sync (optional)
+
+**Settings → MCP → memwal-agent-memory → Environment** — add delegate credentials (never commit):
+
+| Variable | Value |
+|----------|--------|
+| `MEMWAL_PRIVATE_KEY` | Delegate key only (not owner) |
+| `MEMWAL_ACCOUNT_ID` | MemWal account ID |
+| `MEMWAL_SERVER_URL` | `https://relayer.memory.walrus.xyz` |
+
+```bash
+npx -y @mysten-incubation/memwal-mcp login --prod
+```
+
+Map fields from `~/.memwal/credentials.json` yourself — the agent must **not** read that file.
+
+**Data directory (Pro Local):** `~/.memwal-agent-memory/mcp`
+
+---
+
+## Quick start for Claude Desktop
+
+Same MCP server — add to **`claude_desktop_config.json`**:
+
+```json
+{
+  "mcpServers": {
+    "memwal-agent-memory": {
+      "command": "npx",
+      "args": ["-y", "@memwalpp/mcp@0.1.0", "--transport", "stdio"],
+      "env": {
+        "MEMWAL_NAMESPACE": "claude-desktop",
+        "MEMWAL_MCP_DATA_DIR": "${HOME}/.memwal-agent-memory/mcp"
+      }
+    }
+  }
+}
+```
+
+Restart Claude. Package docs: [`@memwalpp/mcp` README](https://github.com/Olympusxvn/memwal-agent-memory/tree/main/packages/mcp#readme).
 
 ---
 
@@ -26,8 +123,6 @@ Local SQLite for fast, private project memory. Optional Walrus durability via [W
 | **Skills** | Setup (Pro Local / Walrus Sync) and hybrid workflows |
 | **Command** | `/setup` — verify installation |
 
-This plugin **wraps** Mysten's MemWal SDK via our open-source MCP package. It does **not** fork Walrus Memory.
-
 ---
 
 ## Tiers
@@ -36,38 +131,6 @@ This plugin **wraps** Mysten's MemWal SDK via our open-source MCP package. It do
 |------|--------------|----------|
 | **Pro Local** (default) | Node 20+ | Daily AI coding — decisions, conventions, bug fixes stay on device |
 | **+ Walrus Sync** | + MemWal delegate key and account ID in MCP env | Durable backup, verifiable memory, cross-machine restore |
-
----
-
-## Installation (Cursor)
-
-1. Install this plugin from the **Cursor Marketplace** (after approval) or load locally from `~/.cursor/plugins/local/memwal-agent-memory/`
-2. Ensure **Node.js 20+** is installed
-3. Enable the plugin in **Cursor Settings → Plugins**
-4. Confirm **memwal-agent-memory** MCP server is active in **Settings → MCP**
-5. Fully restart Cursor (Cmd+Q on macOS)
-
-### Pro Local — no extra configuration
-
-Data directory (default): `~/.memwal-agent-memory/mcp`
-
-### + Walrus Sync — optional MCP env
-
-Add in **Cursor Settings → MCP → memwal-agent-memory → Environment** (never commit these):
-
-| Variable | Description |
-|----------|-------------|
-| `MEMWAL_PRIVATE_KEY` | MemWal **delegate** private key (not owner key) |
-| `MEMWAL_ACCOUNT_ID` | MemWal account ID |
-| `MEMWAL_SERVER_URL` | e.g. `https://relayer.memory.walrus.xyz` |
-
-Obtain credentials via official login (user runs locally):
-
-```bash
-npx -y @mysten-incubation/memwal-mcp login --prod
-```
-
-Map fields from `~/.memwal/credentials.json` into MCP env yourself — the agent must not read that file.
 
 ---
 
@@ -136,17 +199,9 @@ Comparison: [Comparison.md](https://github.com/Olympusxvn/memwal-agent-memory/bl
 
 ---
 
-## Prerequisites for marketplace install
+## Developer notes
 
-This plugin's `mcp.json` runs:
-
-```bash
-npx -y @memwalpp/mcp@0.1.0 --transport stdio
-```
-
-**Status (2026-06-18):** `@memwalpp/mcp@0.1.0` is **live** on npm ([registry](https://www.npmjs.com/package/@memwalpp/mcp)). Cursor Marketplace **publisher application submitted** — awaiting team review.
-
-For local development without npm cache, use [mcp.dev.json](mcp.dev.json) + upstream monorepo build — see [docs/LOCAL-DEV-MCP.md](docs/LOCAL-DEV-MCP.md).
+Local MCP dev (monorepo bundle): [mcp.dev.json](mcp.dev.json) · [docs/LOCAL-DEV-MCP.md](docs/LOCAL-DEV-MCP.md)
 
 ---
 
