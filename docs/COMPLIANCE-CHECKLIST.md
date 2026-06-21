@@ -1,6 +1,6 @@
 # Compliance checklist — Cursor Marketplace
 
-**Plugin:** `memwal-agent-memory` v0.1.9  
+**Plugin:** `memwal-agent-memory` v0.1.11  
 **Reference:** [Plugins](https://cursor.com/docs/reference/plugins) · [Rules](https://cursor.com/docs/rules) · [Skills](https://cursor.com/docs/skills) · [Hooks](https://cursor.com/docs/hooks) · [MCP](https://cursor.com/docs/mcp)  
 **Audits:** [PLUGINS](./PLUGINS-REFERENCE-AUDIT.md) · [RULES](./RULES-REFERENCE-AUDIT.md) · [SKILLS](./SKILLS-REFERENCE-AUDIT.md) · [HOOKS](./HOOKS-REFERENCE-AUDIT.md) · [MCP](./MCP-REFERENCE-AUDIT.md)  
 **Publisher:** Vo Quoc Cuong · vo.q.cuong@gmail.com  
@@ -63,6 +63,7 @@ Legend: **☑** Pass · **◐** Optional / not required · **☐** Open
 | D2 | No GPL / AGPL / LGPL in plugin repo | ☑ | MIT only |
 | D3 | Plugin free — no paid marketplace access | ☑ | README |
 | D4 | PUBLISHER-OBLIGATIONS.md accepted | ☑ | maintainer sign-off 2026-06-18 |
+| D4b | PLUGIN-TERMS.md visible to users (§4.2) | ☑ | README + [PLUGIN-TERMS.md](./PLUGIN-TERMS.md) v0.1.11 |
 | D5 | PRIVACY.md accurate | ☑ | Pro Local + Walrus tiers |
 | D6 | SECURITY.md — incident contact | ☑ | vo.q.cuong@gmail.com |
 | D7 | No training on Plugin Data / User Content | ☑ | PRIVACY.md § Publisher terms |

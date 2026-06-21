@@ -14,11 +14,12 @@ search   → ranked hybrid    verify → proof layers you can audit
 
 | | |
 |---|---|
-| **Plugin** | `memwal-agent-memory` v0.1.9 |
+| **Plugin** | `memwal-agent-memory` v0.1.11 |
 | **MCP server** | [`@memwalpp/mcp@0.1.0`](https://www.npmjs.com/package/@memwalpp/mcp) via `npx` |
 | **Upstream** | [memwal-agent-memory](https://github.com/Olympusxvn/memwal-agent-memory) |
 | **Publisher** | Vo Quoc Cuong · [@Olympusxvn](https://github.com/Olympusxvn) |
 | **Marketplace** | Application **submitted** (2026-06-18) — [review pending](https://cursor.com/marketplace/publish) |
+| **Legal** | [Privacy](docs/PRIVACY.md) · [Terms](docs/PLUGIN-TERMS.md) · [Security](docs/SECURITY.md) |
 
 ---
 
@@ -112,6 +113,8 @@ Same MCP server — add to **`claude_desktop_config.json`**:
 
 Restart Claude. Package docs: [`@memwalpp/mcp` README](https://github.com/Olympusxvn/memwal-agent-memory/tree/main/packages/mcp#readme).
 
+**[Privacy](docs/PRIVACY.md) · [Terms](docs/PLUGIN-TERMS.md) · [Security](docs/SECURITY.md)** — data handling, plugin terms, and vulnerability reporting.
+
 ---
 
 ## What this plugin provides
@@ -174,6 +177,7 @@ Comparison: [docs/COMPARISON.md](docs/COMPARISON.md) (mirror) · [upstream Compa
 
 | Doc | Content |
 |-----|---------|
+| [docs/COMPARISON.md](docs/COMPARISON.md) | Official vs `@memwalpp/mcp` — nine-tool side-by-side |
 | [docs/MCP-REFERENCE-AUDIT.md](docs/MCP-REFERENCE-AUDIT.md) | Audit vs [Cursor MCP](https://cursor.com/docs/mcp) |
 | [docs/HOOKS-REFERENCE-AUDIT.md](docs/HOOKS-REFERENCE-AUDIT.md) | Audit vs [Cursor Hooks](https://cursor.com/docs/hooks) — optional, N/A |
 | [docs/SKILLS-REFERENCE-AUDIT.md](docs/SKILLS-REFERENCE-AUDIT.md) | Audit vs [Cursor Skills](https://cursor.com/docs/skills) |
@@ -186,6 +190,7 @@ Comparison: [docs/COMPARISON.md](docs/COMPARISON.md) (mirror) · [upstream Compa
 | [docs/OPERATIONS-AND-SUPPORT.md](docs/OPERATIONS-AND-SUPPORT.md) | Support and incident response |
 | [docs/DO-NOT.md](docs/DO-NOT.md) | Actions that risk delisting |
 | [docs/PRIVACY.md](docs/PRIVACY.md) | Data handling disclosure |
+| [docs/PLUGIN-TERMS.md](docs/PLUGIN-TERMS.md) | Plugin Terms of Service (user-facing) |
 | [docs/SECURITY.md](docs/SECURITY.md) | Security practices |
 | [docs/REPO-PLAN.md](docs/REPO-PLAN.md) | Repository structure and npm prerequisite |
 
@@ -207,4 +212,6 @@ Local MCP dev (monorepo bundle): [mcp.dev.json](mcp.dev.json) · [docs/LOCAL-DEV
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE). Use of this plugin is also subject to [Plugin Terms](docs/PLUGIN-TERMS.md), [Privacy](docs/PRIVACY.md), and [Security](docs/SECURITY.md).
+
+**Not endorsed by Cursor or Mysten Labs.** Marketplace approval does not constitute certification.

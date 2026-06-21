@@ -2,6 +2,14 @@
 
 All notable changes to this Cursor plugin are documented here.
 
+## [0.1.11] — 2026-06-18
+
+### Publisher Terms compliance (§4.2)
+
+- **[docs/PLUGIN-TERMS.md](docs/PLUGIN-TERMS.md)** — user-facing Terms: MIT, as-is, support via Issues, third-party npm/Walrus, no warranty, governing law
+- **README** — Privacy · Terms · Security links in hero, post–Quick start, and footer
+- **Maintainer:** request Marketplace **re-index** after this bump ([Publisher Terms §2.1](https://cursor.com/marketplace-publisher-terms))
+
 ## [0.1.10] — 2026-06-18
 
 ### Documentation

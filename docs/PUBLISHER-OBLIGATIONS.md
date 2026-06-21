@@ -50,7 +50,7 @@ This is a maintainer reference — not legal advice.
 | **Plugin Data responsibility** | User memory content flows through `@memwalpp/mcp` — see [PRIVACY.md](./PRIVACY.md) |
 | **No model training** | Do not train ML models on Plugin Data or User Content |
 | **Minimal collection** | Plugin repo stores no user data — local SQLite on user machine |
-| **Disclosures visible** | Privacy doc linked from README |
+| **Disclosures visible** | [PRIVACY.md](./PRIVACY.md) + [PLUGIN-TERMS.md](./PLUGIN-TERMS.md) linked from README |
 | **No selling Plugin Data** | Prohibited |
 
 ---
