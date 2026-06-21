@@ -100,10 +100,6 @@ Full data flows: [PRIVACY.md](PRIVACY.md)
 
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PUBLISHER AND CONTRIBUTORS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF DATA, PROFITS, OR GOODWILL, ARISING FROM YOUR USE OF OR INABILITY TO USE THE PLUGIN, WHETHER BASED ON WARRANTY, CONTRACT, TORT, OR ANY OTHER LEGAL THEORY, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
-Where liability cannot be excluded, our aggregate liability shall not exceed **USD $100**.
-
-Some jurisdictions do not allow certain limitations; in those cases, our liability is limited to the greatest extent permitted by law.
-
 ---
 
 ## 9. Governing law
