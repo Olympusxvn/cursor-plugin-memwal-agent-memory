@@ -44,12 +44,12 @@ Legend: **☑** Pass · **◐** Optional / not required · **☐** Open
 | # | Check | Pass | Evidence |
 |---|-------|------|----------|
 | C1 | `mcp.json` — `memwal-agent-memory` entry | ☑ | valid JSON |
-| C2 | `npx -y @memwalpp/mcp@0.1.0` pinned | ☑ | mcp.json |
+| C2 | `npx -y @memwalpp/mcp@0.1.1` pinned | ☑ | mcp.json (v0.1.12) |
 | C3 | npm package published and installable | ☑ | npmjs.com 2026-06-18 |
 | C4 | No secrets in `mcp.json` | ☑ | namespace + data dir only |
 | C5 | `MEMWAL_MCP_DATA_DIR` uses `${userHome}` | ☑ | mcp.json |
 | C6 | Walrus creds = user MCP env only | ☑ | README + skills |
-| C7 | Local smoke: 9 tools after restart | ☑ | CHANGELOG 0.1.1 |
+| C7 | Local smoke: 10 tools after restart | ☑ | CHANGELOG 0.1.12 |
 | C8 | `"type": "stdio"` per [MCP docs](https://cursor.com/docs/mcp) | ☑ | mcp.json v0.1.6 |
 | C9 | MCP audit complete | ☑ | [MCP-REFERENCE-AUDIT.md](./MCP-REFERENCE-AUDIT.md) |
 
@@ -88,7 +88,7 @@ Legend: **☑** Pass · **◐** Optional / not required · **☐** Open
 | # | Check | Pass | Evidence |
 |---|-------|------|----------|
 | F1 | README — install, tiers, smoke, support | ☑ | README.md |
-| F2 | CHANGELOG — releases documented | ☑ | 0.1.0–0.1.3 |
+| F2 | CHANGELOG — releases documented | ☑ | 0.1.0–0.1.12 |
 | F3 | Upstream MCP bug link | ☑ | memwal-agent-memory/issues |
 | F4 | Official Walrus MCP alternative linked | ☑ | README + Comparison |
 | F5 | DO-NOT.md reviewed | ☑ | maintainer 2026-06-18 |

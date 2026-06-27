@@ -8,8 +8,8 @@ Step-by-step guide to publish **memwal-agent-memory** on [cursor.com/marketplace
 
 | # | Task | Owner | Done |
 |---|------|-------|------|
-| 0.1 | Publish `@memwalpp/mcp@0.1.0` to npm public | Upstream monorepo | ☑ |
-| 0.2 | Verify `npx -y @memwalpp/mcp@0.1.0 --transport stdio` on clean machine | You | ☑ |
+| 0.1 | Publish `@memwalpp/mcp@0.1.1` to npm public | Upstream monorepo | ☑ |
+| 0.2 | Verify `npx -y @memwalpp/mcp@0.1.1 --transport stdio` on clean machine | You | ☑ |
 | 0.3 | Create public GitHub repo `cursor-plugin-memwal-agent-memory` | You | ☑ |
 | 0.4 | MIT license committed (no GPL/AGPL) | This repo | ☑ |
 
@@ -20,7 +20,7 @@ Step-by-step guide to publish **memwal-agent-memory** on [cursor.com/marketplace
 | # | Task | Command / action |
 |---|------|------------------|
 | 1.1 | Copy plugin to local plugins dir | Already at `~/.cursor/plugins/local/memwal-agent-memory/` |
-| 1.2 | Test with npm MCP (post-publish) | Enable plugin → MCP green → 9 tools |
+| 1.2 | Test with npm MCP (post-publish) | Enable plugin → MCP green → 10 tools |
 | 1.3 | Pre-publish dev test | Use [mcp.dev.json](../mcp.dev.json) + upstream `pnpm mcp:build` |
 | 1.4 | Run compliance checklist | [COMPLIANCE-CHECKLIST.md](./COMPLIANCE-CHECKLIST.md) — all items ☑ |
 | 1.5 | Smoke test | remember → recall verification phrase |
@@ -121,7 +121,7 @@ Cursor plugin distributing MemWal Agent Memory MCP — hybrid local + optional
 Walrus memory for AI-assisted software development. Includes MCP wiring,
 agent rules, setup skills, and compliance documentation.
 
-MCP runtime: npx -y @memwalpp/mcp@0.1.0 --transport stdio
+MCP runtime: npx -y @memwalpp/mcp@0.1.1 --transport stdio
 Upstream implementation: https://github.com/Olympusxvn/memwal-agent-memory
 
 No user fees. No secrets in repo. Privacy: docs/PRIVACY.md

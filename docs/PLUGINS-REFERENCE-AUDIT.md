@@ -16,7 +16,7 @@
 | **Component frontmatter** | **Pass** — rules, skills, command |
 | **MCP wiring** | **Pass** — npm package live, pinned semver |
 | **Documentation & legal** | **Pass** — README, LICENSE, PRIVACY, SECURITY |
-| **Local functional test** | **Pass** — 9 tools, remember/recall (2026-06-18) |
+| **Local functional test** | **Pass** — 10 tools, remember/recall (2026-06-18) |
 | **Marketplace submission** | **Submitted** — awaiting Cursor review |
 | **Optional improvements** | — (O1 logo + O2 G4 resolved in v0.1.9) |
 
@@ -86,13 +86,13 @@ No `agents/` — not required.
 
 ```json
 "command": "npx",
-"args": ["-y", "@memwalpp/mcp@0.1.0", "--transport", "stdio"]
+"args": ["-y", "@memwalpp/mcp@0.1.1", "--transport", "stdio"]
 ```
 
 | Check | Status |
 |-------|--------|
 | Valid `mcp.json` under `mcpServers` | Pass |
-| Pinned public npm package | Pass — [@memwalpp/mcp@0.1.0](https://www.npmjs.com/package/@memwalpp/mcp) |
+| Pinned public npm package | Pass — [@memwalpp/mcp@0.1.1](https://www.npmjs.com/package/@memwalpp/mcp) (plugin v0.1.12) |
 | No secrets in repo config | Pass |
 | `${userHome}` data dir placeholder | Pass |
 | Walrus creds documented as user MCP env only | Pass |
@@ -110,7 +110,7 @@ No `agents/` — not required.
 | Logo committed + relative path | ✓ | `assets/logo.png` |
 | README documents usage | ✓ | install, tiers, smoke, support |
 | Relative valid paths | ✓ | manifest audit |
-| Tested locally | ✓ | CHANGELOG 0.1.1 — 9 tools, remember/recall |
+| Tested locally | ✓ | CHANGELOG 0.1.1 — 10 tools, remember/recall |
 | Multi-plugin `marketplace.json` | N/A | Single-plugin repo |
 | Application submitted | ✓ | 2026-06-18 via [marketplace/publish](https://cursor.com/marketplace/publish) |
 

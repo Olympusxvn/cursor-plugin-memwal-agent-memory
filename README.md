@@ -14,8 +14,8 @@ search   → ranked hybrid    verify → proof layers you can audit
 
 | | |
 |---|---|
-| **Plugin** | `memwal-agent-memory` v0.1.11 |
-| **MCP server** | [`@memwalpp/mcp@0.1.0`](https://www.npmjs.com/package/@memwalpp/mcp) via `npx` |
+| **Plugin** | `memwal-agent-memory` v0.1.12 |
+| **MCP server** | [`@memwalpp/mcp@0.1.1`](https://www.npmjs.com/package/@memwalpp/mcp) via `npx` |
 | **Upstream** | [memwal-agent-memory](https://github.com/Olympusxvn/memwal-agent-memory) |
 | **Publisher** | Vo Quoc Cuong · [@Olympusxvn](https://github.com/Olympusxvn) |
 | **Marketplace** | Application **submitted** (2026-06-18) — [review pending](https://cursor.com/marketplace/publish) |
@@ -28,7 +28,7 @@ search   → ranked hybrid    verify → proof layers you can audit
 - **Hybrid** — **Pro Local** works with Node 20+ only: decisions, conventions, and bugfixes stay on disk. Call **`sync`** when you want Walrus backup — not on every message.
 - **Privacy** — Server-enforced redaction and quality gates before cloud promote. Rules and skills tell the agent: no secrets in memory, delegate keys in MCP env only.
 - **Verifiable** — Layered **`verify`** (local proof → Walrus blob → optional chain read). Live Walrus Sync tested for marketplace compliance ([G4 evidence](docs/WALRUS-SYNC-G4-TEST.md)).
-- **Agent experience** — Plugin bundles **9 MCP tools**, a hybrid-memory **rule**, **setup/workflow skills**, and **`/setup`** — so Cursor agents know *when* to remember and recall.
+- **Agent experience** — Plugin bundles **10 MCP tools** (incl. `saveArtifact`), a hybrid-memory **rule**, **setup/workflow skills**, and **`/setup`** — so Cursor agents know *when* to remember and recall.
 
 Wraps Mysten's MemWal SDK through our open-source stack. **Does not fork** [Walrus Memory](https://docs.wal.app).
 
@@ -36,7 +36,7 @@ Wraps Mysten's MemWal SDK through our open-source stack. **Does not fork** [Walr
 
 ## Quick start for Cursor
 
-**Requires:** [Node.js 20+](https://nodejs.org/) · `@memwalpp/mcp@0.1.0` on [npm](https://www.npmjs.com/package/@memwalpp/mcp) (live)
+**Requires:** [Node.js 20+](https://nodejs.org/) · `@memwalpp/mcp@0.1.1` on [npm](https://www.npmjs.com/package/@memwalpp/mcp) (live)
 
 ### Option A — Cursor Marketplace (recommended after approval)
 
@@ -58,7 +58,7 @@ Production MCP wiring (already in `mcp.json`):
     "memwal-agent-memory": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@memwalpp/mcp@0.1.0", "--transport", "stdio"],
+      "args": ["-y", "@memwalpp/mcp@0.1.1", "--transport", "stdio"],
       "env": {
         "MEMWAL_NAMESPACE": "cursor",
         "MEMWAL_MCP_DATA_DIR": "${userHome}/.memwal-agent-memory/mcp"
@@ -101,7 +101,7 @@ Same MCP server — add to **`claude_desktop_config.json`**:
   "mcpServers": {
     "memwal-agent-memory": {
       "command": "npx",
-      "args": ["-y", "@memwalpp/mcp@0.1.0", "--transport", "stdio"],
+      "args": ["-y", "@memwalpp/mcp@0.1.1", "--transport", "stdio"],
       "env": {
         "MEMWAL_NAMESPACE": "claude-desktop",
         "MEMWAL_MCP_DATA_DIR": "${HOME}/.memwal-agent-memory/mcp"
@@ -121,7 +121,7 @@ Restart Claude. Package docs: [`@memwalpp/mcp` README](https://github.com/Olympu
 
 | Component | Purpose |
 |-----------|---------|
-| **MCP server** | Nine tools: `remember`, `recall`, `search`, `sync`, `getVersionHistory`, `getLineage`, `verify`, `softDelete`, `getStats` |
+| **MCP server** | Ten tools: `remember`, `recall`, `search`, `sync`, `saveArtifact`, `getVersionHistory`, `getLineage`, `verify`, `softDelete`, `getStats` |
 | **Rule** | Guides the agent on when to store and recall project context |
 | **Skills** | Setup (Pro Local / Walrus Sync) and hybrid workflows |
 | **Command** | `/setup` — verify installation |
@@ -177,7 +177,7 @@ Comparison: [docs/COMPARISON.md](docs/COMPARISON.md) (mirror) · [upstream Compa
 
 | Doc | Content |
 |-----|---------|
-| [docs/COMPARISON.md](docs/COMPARISON.md) | Official vs `@memwalpp/mcp` — nine-tool side-by-side |
+| [docs/COMPARISON.md](docs/COMPARISON.md) | Official vs `@memwalpp/mcp` — ten-tool side-by-side |
 | [docs/MCP-REFERENCE-AUDIT.md](docs/MCP-REFERENCE-AUDIT.md) | Audit vs [Cursor MCP](https://cursor.com/docs/mcp) |
 | [docs/HOOKS-REFERENCE-AUDIT.md](docs/HOOKS-REFERENCE-AUDIT.md) | Audit vs [Cursor Hooks](https://cursor.com/docs/hooks) — optional, N/A |
 | [docs/SKILLS-REFERENCE-AUDIT.md](docs/SKILLS-REFERENCE-AUDIT.md) | Audit vs [Cursor Skills](https://cursor.com/docs/skills) |

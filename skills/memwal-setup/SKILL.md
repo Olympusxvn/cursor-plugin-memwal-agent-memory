@@ -24,7 +24,7 @@ Connect **memwal-agent-memory** MCP, pick **Pro Local** or **+ Walrus Sync**, ve
 node -v   # must be 20+
 ```
 
-MCP package (marketplace): `npx -y @memwalpp/mcp@0.1.0 --transport stdio`
+MCP package (marketplace): `npx -y @memwalpp/mcp@0.1.1 --transport stdio`
 
 ## Tiers
 
@@ -45,7 +45,7 @@ User maps `delegatePrivateKey` → `MEMWAL_PRIVATE_KEY`, `accountId` → `MEMWAL
 
 Ask: **What MCP tools do you have available?**
 
-Expected nine tools: `remember`, `recall`, `search`, `sync`, `getVersionHistory`, `getLineage`, `verify`, `softDelete`, `getStats`.
+Expected ten tools: `remember`, `recall`, `search`, `sync`, `saveArtifact`, `getVersionHistory`, `getLineage`, `verify`, `softDelete`, `getStats`.
 
 Smoke test:
 
@@ -73,7 +73,7 @@ For pure cloud MemWal (`memwal_remember`, analyze, restore): official plugin at 
 | Symptom | Fix |
 |---------|-----|
 | No MCP tools | Reload Cursor; confirm plugin enabled; Node 20+ |
-| `npx` package not found | Install [@memwalpp/mcp@0.1.0](https://www.npmjs.com/package/@memwalpp/mcp); or use [mcp.dev.json](../../mcp.dev.json) for monorepo dev |
+| `npx` package not found | Install [@memwalpp/mcp@0.1.1](https://www.npmjs.com/package/@memwalpp/mcp); or use [mcp.dev.json](../../mcp.dev.json) for monorepo dev |
 | Empty recall | Consistent `MEMWAL_NAMESPACE` |
 | `skipReason: offline` on sync | Pro Local only — add Walrus env in MCP settings |
 | Owner key rejected | Use delegate key only |

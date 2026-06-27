@@ -88,7 +88,7 @@ Not plugin maintainer fault — document in Issues:
 2. Plugin enabled? Settings → Plugins
 3. MCP green? Settings → MCP
 4. Full Cursor restart (Cmd+Q)
-5. `npx -y @memwalpp/mcp@0.1.0 --transport stdio` works in terminal?
+5. `npx -y @memwalpp/mcp@0.1.1 --transport stdio` works in terminal?
 
 **Empty recall**
 

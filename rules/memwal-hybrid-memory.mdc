@@ -25,6 +25,12 @@ When the **memwal-agent-memory** MCP server is available, use it to build **pers
 - After important `remember` calls when user uses **+ Walrus Sync** tier
 - Do **not** auto-sync on every message — hybrid flow is intentional
 
+## When to call `saveArtifact`
+
+- User wants a **report, dataset summary, or structured JSON** stored as a durable artifact
+- Walrus track / verification outputs (markdown or JSON) the user may promote later via `sync`
+- Prefer `saveArtifact` over raw `remember` when output is file-like and should be filterable (`artifact: true`)
+
 ## When to call `verify` / `getLineage`
 
 - User asks whether memory is **verifiable** or wants proof layers

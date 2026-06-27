@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="colGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="#0a0a0a"/>
+  <text x="64" y="48" font-family="Inter, sans-serif" font-size="12" letter-spacing="3" fill="#00f5ff">TOOL SURFACE v1</text>
+  <text x="64" y="72" font-family="Inter, sans-serif" font-size="14" fill="#64748b">10 tools | Marketplace write tools not in MCP v1</text>
+  <rect x="64" y="100" width="340" height="280" rx="12" fill="#141414" stroke="rgba(0,245,255,0.2)" stroke-width="1"/>
+  <rect x="64" y="100" width="340" height="4" rx="2" fill="url(#colGrad)"/>
+  <text x="84" y="140" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#00f5ff">Core Memory</text>
+  <text x="84" y="175" font-family="JetBrains Mono, monospace" font-size="13" fill="#00f5ff">remember</text>
+  <text x="200" y="175" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Local SQLite write</text>
+  <text x="84" y="210" font-family="JetBrains Mono, monospace" font-size="13" fill="#00f5ff">recall</text>
+  <text x="200" y="210" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Hybrid pull</text>
+  <text x="84" y="245" font-family="JetBrains Mono, monospace" font-size="13" fill="#00f5ff">search</text>
+  <text x="200" y="245" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Ranked + verifiable flag</text>
+  <rect x="430" y="100" width="340" height="280" rx="12" fill="#141414" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <rect x="430" y="100" width="340" height="4" rx="2" fill="#a78bfa" opacity="0.5"/>
+  <text x="450" y="140" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#a78bfa">Management</text>
+  <text x="450" y="175" font-family="JetBrains Mono, monospace" font-size="13" fill="#a78bfa">sync</text>
+  <text x="520" y="175" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Gate to Walrus promote</text>
+  <text x="450" y="210" font-family="JetBrains Mono, monospace" font-size="12" fill="#a78bfa">getVersionHistory</text>
+  <text x="450" y="245" font-family="JetBrains Mono, monospace" font-size="13" fill="#a78bfa">softDelete</text>
+  <text x="580" y="245" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Tombstone row</text>
+  <rect x="796" y="100" width="340" height="280" rx="12" fill="#141414" stroke="rgba(0,245,255,0.15)" stroke-width="1"/>
+  <rect x="796" y="100" width="340" height="4" rx="2" fill="url(#colGrad)"/>
+  <text x="816" y="140" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#ffffff">System</text>
+  <text x="816" y="175" font-family="JetBrains Mono, monospace" font-size="13" fill="#00f5ff">verify</text>
+  <text x="900" y="175" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Layered proof</text>
+  <text x="816" y="210" font-family="JetBrains Mono, monospace" font-size="13" fill="#00f5ff">getLineage</text>
+  <text x="930" y="210" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Ancestry graph</text>
+  <text x="816" y="245" font-family="JetBrains Mono, monospace" font-size="13" fill="#00f5ff">getStats</text>
+  <text x="910" y="245" font-family="Inter, sans-serif" font-size="12" fill="#64748b">durableLive inventory</text>
+</svg>

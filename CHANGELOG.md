@@ -2,6 +2,16 @@
 
 All notable changes to this Cursor plugin are documented here.
 
+## [0.1.12] — 2026-06-27
+
+### MCP runtime — `@memwalpp/mcp@0.1.1`
+
+- **`mcp.json`** pinned to `npx -y @memwalpp/mcp@0.1.1 --transport stdio` (npm latest)
+- **10 v1 tools** — upstream adds **`saveArtifact`** (JSON/markdown reports → optional Walrus promote)
+- **README + skill** — tool count, smoke test, Claude Desktop example updated
+- **Rule** — when to call `saveArtifact` for reports/datasets
+- **Maintainer:** request Marketplace **re-index** after this bump
+
 ## [0.1.11] — 2026-06-18
 
 ### Publisher Terms compliance (§4.2)

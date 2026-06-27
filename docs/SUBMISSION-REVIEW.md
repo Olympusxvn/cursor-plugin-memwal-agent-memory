@@ -75,7 +75,7 @@ The plugin meets technical submission requirements. No urgent changes are requir
 | Public GitHub repo | Pass |
 | MIT license committed | Pass |
 | No secrets in tracked files | Pass (`.gitignore` covers `.env*`) |
-| npm runtime dependency live | Pass — `@memwalpp/mcp@0.1.0` on npmjs.com |
+| npm runtime dependency live | Pass — `@memwalpp/mcp@0.1.1` on npmjs.com (plugin v0.1.12) |
 
 ---
 
@@ -89,7 +89,7 @@ Production `mcp.json`:
     "memwal-agent-memory": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@memwalpp/mcp@0.1.0", "--transport", "stdio"],
+      "args": ["-y", "@memwalpp/mcp@0.1.1", "--transport", "stdio"],
       "env": {
         "MEMWAL_NAMESPACE": "cursor",
         "MEMWAL_MCP_DATA_DIR": "${userHome}/.memwal-agent-memory/mcp"
@@ -106,7 +106,7 @@ Production `mcp.json`:
 | Pinned public npm package | Pass |
 | No secrets in repo MCP config | Pass |
 | `${userHome}` config interpolation | Pass |
-| Local smoke — 9 tools, remember/recall | Pass (CHANGELOG 0.1.1) |
+| Local smoke — 10 tools, remember/recall | Pass (CHANGELOG 0.1.1) |
 
 **Tools (v1):** `remember`, `recall`, `search`, `sync`, `getVersionHistory`, `getLineage`, `verify`, `softDelete`, `getStats`.
 

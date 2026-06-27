@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2800" viewBox="0 0 1200 2800">
+  <title>MemWal Hybrid MCP Server - Infographic</title>
+  <defs><defs>
+    <linearGradient id="accent_s0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="glow_s0">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#00f5ff" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <defs>
+    <linearGradient id="accent_s1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="glow_s1">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#a78bfa" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  <defs>
+    <linearGradient id="hubGrad_s2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <marker id="arrow_s2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <defs>
+    <linearGradient id="accent_s3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="glow_s3">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#00f5ff" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+  <defs>
+    <linearGradient id="colGrad_s4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <defs>
+    <linearGradient id="accent_s6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+    </defs>
+  <g transform="translate(0,0)">
+
+  <rect width="1200" height="400" fill="#0a0a0a"/>
+  <circle cx="120" cy="140" r="36" fill="none" stroke="url(#accent_s0)" stroke-width="2" opacity="0.6"/>
+  <circle cx="120" cy="140" r="14" fill="url(#accent_s0)" opacity="0.9"/>
+  <text x="180" y="130" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="700" fill="url(#accent_s0)">MemWal Hybrid MCP Server</text>
+  <text x="180" y="175" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#94a3b8">Hybrid Memory Layer for AI Agents</text>
+  <line x1="64" y1="210" x2="480" y2="210" stroke="url(#accent_s0)" stroke-width="2"/>
+  <text x="64" y="260" font-family="JetBrains Mono, monospace" font-size="14" fill="#64748b">npm @memwalpp/mcp@0.1.1</text>
+  <text x="320" y="260" font-family="Inter, sans-serif" font-size="14" fill="#64748b">Node 20+</text>
+  <text x="440" y="260" font-family="Inter, sans-serif" font-size="14" fill="#64748b">stdio | HTTP</text>
+  <rect x="920" y="100" width="160" height="40" rx="20" fill="#141414" stroke="rgba(0,245,255,0.3)" stroke-width="1" filter="url(#glow_s0)"/>
+  <text x="1000" y="126" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#00f5ff">9 MCP Tools</text>
+  <text x="64" y="330" font-family="Inter, sans-serif" font-size="16" fill="#e2e8f0">Persistent project memory - fast on your machine first, durable on Walrus when you choose.</text>
+  </g>
+  <g transform="translate(0,400)">
+
+  <rect width="1200" height="400" fill="#0a0a0a"/>
+  <text x="64" y="56" font-family="Inter, sans-serif" font-size="12" letter-spacing="3" fill="#00f5ff">WHAT IS IT?</text>
+  <text x="64" y="110" font-family="Inter, sans-serif" font-size="22" fill="#ffffff">Hybrid = <tspan fill="#00f5ff">Local-first</tspan> + <tspan fill="#a78bfa">Walrus Verifiable</tspan></text>
+  <text x="64" y="150" font-family="Inter, sans-serif" font-size="16" fill="#94a3b8">Wraps Mysten MemWal SDK | Complements official @mysten-incubation/memwal-mcp</text>
+  <rect x="64" y="190" width="500" height="160" rx="12" fill="#141414" stroke="rgba(0,245,255,0.15)" stroke-width="1" filter="url(#glow_s1)"/>
+  <text x="84" y="230" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#00f5ff">Local-first</text>
+  <text x="84" y="260" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">SQLite at ~/.memwal-agent-memory/mcp</text>
+  <text x="84" y="285" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Instant remember / recall / search</text>
+  <text x="84" y="310" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">No keys required (Pro Local tier)</text>
+  <rect x="620" y="190" width="516" height="160" rx="12" fill="#141414" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#glow_s1)"/>
+  <text x="640" y="230" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#a78bfa">Walrus Verifiable</text>
+  <text x="640" y="260" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Encrypted blobs via MemWal relayer</text>
+  <text x="640" y="285" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Explicit sync - not auto-upload</text>
+  <text x="640" y="310" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Layered verify + lineage + proof</text>
+  </g>
+  <g transform="translate(0,800)">
+
+  <rect width="1200" height="400" fill="#0a0a0a"/>
+  <text x="64" y="48" font-family="Inter, sans-serif" font-size="12" letter-spacing="3" fill="#00f5ff">ARCHITECTURE OVERVIEW</text>
+  <rect x="40" y="120" width="120" height="48" rx="8" fill="#141414" stroke="#334155" stroke-width="1"/>
+  <text x="100" y="150" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#e2e8f0">Cursor</text>
+  <rect x="40" y="180" width="120" height="48" rx="8" fill="#141414" stroke="#334155" stroke-width="1"/>
+  <text x="100" y="210" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#e2e8f0">Claude</text>
+  <rect x="220" y="140" width="200" height="80" rx="12" fill="#141414" stroke="url(#hubGrad_s2)" stroke-width="2"/>
+  <text x="320" y="172" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#ffffff">@memwalpp/mcp</text>
+  <text x="320" y="192" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#94a3b8">MCP Server (hub)</text>
+  <rect x="480" y="140" width="180" height="80" rx="8" fill="#141414" stroke="rgba(167,139,250,0.4)" stroke-width="1"/>
+  <text x="570" y="172" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#a78bfa">Redact +</text>
+  <text x="570" y="192" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#a78bfa">Quality Gate</text>
+  <ellipse cx="780" cy="160" rx="70" ry="40" fill="#141414" stroke="#00f5ff" stroke-width="1"/>
+  <text x="780" y="158" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#00f5ff">SQLite</text>
+  <text x="780" y="174" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Pro Local</text>
+  <rect x="920" y="140" width="160" height="80" rx="8" fill="#141414" stroke="rgba(167,139,250,0.3)" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="1000" y="172" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#a78bfa">MemWal Relayer</text>
+  <text x="1000" y="192" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#64748b">Walrus Storage</text>
+  <line x1="160" y1="144" x2="218" y2="164" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow_s2)"/>
+  <line x1="160" y1="204" x2="218" y2="184" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow_s2)"/>
+  <line x1="420" y1="180" x2="478" y2="180" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow_s2)"/>
+  <line x1="660" y1="180" x2="708" y2="170" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow_s2)"/>
+  <line x1="660" y1="190" x2="918" y2="190" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrow_s2)"/>
+  <text x="320" y="260" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#64748b">remember to local</text>
+  <text x="570" y="260" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#64748b">sync to gate to Walrus</text>
+  <text x="780" y="260" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#64748b">search / verify hybrid</text>
+  <rect x="64" y="300" width="1072" height="56" rx="8" fill="#141414" stroke="rgba(0,245,255,0.2)" stroke-width="1"/>
+  <text x="84" y="334" font-family="Inter, sans-serif" font-size="13" fill="#e2e8f0">Unlike official Walrus Memory MCP - Walrus upload is NOT automatic. Call sync when you want durable promotion.</text>
+  </g>
+  <g transform="translate(0,1200)">
+
+  <rect width="1200" height="400" fill="#0a0a0a"/>
+  <text x="64" y="48" font-family="Inter, sans-serif" font-size="12" letter-spacing="3" fill="#00f5ff">CORE BENEFITS</text>
+  <rect x="64" y="80" width="250" height="280" rx="12" fill="#141414" stroke="rgba(0,245,255,0.15)" stroke-width="1" filter="url(#glow_s3)"/>
+  <circle cx="104" cy="120" r="16" fill="url(#accent_s3)" opacity="0.3"/>
+  <text x="104" y="126" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#00f5ff">1</text>
+  <text x="84" y="160" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#ffffff">Privacy-First</text>
+  <text x="84" y="200" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">Server-side redaction</text>
+  <text x="84" y="222" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">before cloud promote.</text>
+  <text x="84" y="256" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">Optional redactLocal</text>
+  <text x="84" y="278" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">on remember.</text>
+  <rect x="334" y="80" width="250" height="280" rx="12" fill="#141414" stroke="rgba(0,245,255,0.15)" stroke-width="1" filter="url(#glow_s3)"/>
+  <circle cx="374" cy="120" r="16" fill="url(#accent_s3)" opacity="0.3"/>
+  <text x="374" y="126" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#00f5ff">2</text>
+  <text x="354" y="160" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#ffffff">Hybrid Performance</text>
+  <text x="354" y="200" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">Local SQLite speed +</text>
+  <text x="354" y="222" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">Walrus durability on</text>
+  <text x="354" y="244" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">demand. Offline recall</text>
+  <text x="354" y="266" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">in Pro Local.</text>
+  <rect x="604" y="80" width="250" height="280" rx="12" fill="#141414" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#glow_s3)"/>
+  <circle cx="644" cy="120" r="16" fill="url(#accent_s3)" opacity="0.3"/>
+  <text x="644" y="126" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa">3</text>
+  <text x="624" y="160" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#ffffff">Verifiable Memory</text>
+  <text x="624" y="200" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">verify - local proof</text>
+  <text x="624" y="222" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">to Walrus blob to chain.</text>
+  <text x="624" y="256" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">getLineage +</text>
+  <text x="624" y="278" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">getVersionHistory.</text>
+  <rect x="874" y="80" width="262" height="280" rx="12" fill="#141414" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#glow_s3)"/>
+  <circle cx="914" cy="120" r="16" fill="url(#accent_s3)" opacity="0.3"/>
+  <text x="914" y="126" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa">4</text>
+  <text x="894" y="160" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#ffffff">Universal Access</text>
+  <text x="894" y="200" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">MCP for any agent:</text>
+  <text x="894" y="222" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">Cursor, Claude Desktop,</text>
+  <text x="894" y="244" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">self-hosted HTTP.</text>
+  <text x="894" y="278" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">One npx install.</text>
+  </g>
+  <g transform="translate(0,1600)">
+
+  <rect width="1200" height="400" fill="#0a0a0a"/>
+  <text x="64" y="48" font-family="Inter, sans-serif" font-size="12" letter-spacing="3" fill="#00f5ff">TOOL SURFACE v1</text>
+  <text x="64" y="72" font-family="Inter, sans-serif" font-size="14" fill="#64748b">10 tools | Marketplace write tools not in MCP v1</text>
+  <rect x="64" y="100" width="340" height="280" rx="12" fill="#141414" stroke="rgba(0,245,255,0.2)" stroke-width="1"/>
+  <rect x="64" y="100" width="340" height="4" rx="2" fill="url(#colGrad_s4)"/>
+  <text x="84" y="140" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#00f5ff">Core Memory</text>
+  <text x="84" y="175" font-family="JetBrains Mono, monospace" font-size="13" fill="#00f5ff">remember</text>
+  <text x="200" y="175" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Local SQLite write</text>
+  <text x="84" y="210" font-family="JetBrains Mono, monospace" font-size="13" fill="#00f5ff">recall</text>
+  <text x="200" y="210" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Hybrid pull</text>
+  <text x="84" y="245" font-family="JetBrains Mono, monospace" font-size="13" fill="#00f5ff">search</text>
+  <text x="200" y="245" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Ranked + verifiable flag</text>
+  <rect x="430" y="100" width="340" height="280" rx="12" fill="#141414" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <rect x="430" y="100" width="340" height="4" rx="2" fill="#a78bfa" opacity="0.5"/>
+  <text x="450" y="140" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#a78bfa">Management</text>
+  <text x="450" y="175" font-family="JetBrains Mono, monospace" font-size="13" fill="#a78bfa">sync</text>
+  <text x="520" y="175" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Gate to Walrus promote</text>
+  <text x="450" y="210" font-family="JetBrains Mono, monospace" font-size="12" fill="#a78bfa">getVersionHistory</text>
+  <text x="450" y="245" font-family="JetBrains Mono, monospace" font-size="13" fill="#a78bfa">softDelete</text>
+  <text x="580" y="245" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Tombstone row</text>
+  <rect x="796" y="100" width="340" height="280" rx="12" fill="#141414" stroke="rgba(0,245,255,0.15)" stroke-width="1"/>
+  <rect x="796" y="100" width="340" height="4" rx="2" fill="url(#colGrad_s4)"/>
+  <text x="816" y="140" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#ffffff">System</text>
+  <text x="816" y="175" font-family="JetBrains Mono, monospace" font-size="13" fill="#00f5ff">verify</text>
+  <text x="900" y="175" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Layered proof</text>
+  <text x="816" y="210" font-family="JetBrains Mono, monospace" font-size="13" fill="#00f5ff">getLineage</text>
+  <text x="930" y="210" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Ancestry graph</text>
+  <text x="816" y="245" font-family="JetBrains Mono, monospace" font-size="13" fill="#00f5ff">getStats</text>
+  <text x="910" y="245" font-family="Inter, sans-serif" font-size="12" fill="#64748b">durableLive inventory</text>
+  </g>
+  <g transform="translate(0,2000)">
+
+  <rect width="1200" height="400" fill="#0a0a0a"/>
+  <text x="64" y="48" font-family="Inter, sans-serif" font-size="12" letter-spacing="3" fill="#00f5ff">TIERS</text>
+  <rect x="64" y="80" width="520" height="280" rx="12" fill="#141414" stroke="rgba(0,245,255,0.2)" stroke-width="1"/>
+  <text x="84" y="120" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#00f5ff">Pro Local</text>
+  <text x="84" y="150" font-family="Inter, sans-serif" font-size="13" fill="#64748b">default tier</text>
+  <text x="84" y="190" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Needs: Node 20+ only</text>
+  <text x="84" y="220" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Storage: ~/.memwal-agent-memory/mcp</text>
+  <text x="84" y="250" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Offline: full remember / recall / search</text>
+  <text x="84" y="300" font-family="Inter, sans-serif" font-size="14" fill="#e2e8f0">Best for: daily Cursor / Claude coding</text>
+  <rect x="616" y="80" width="520" height="280" rx="12" fill="#141414" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="636" y="120" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#a78bfa">+ Walrus Sync</text>
+  <text x="636" y="150" font-family="Inter, sans-serif" font-size="13" fill="#64748b">optional durable tier</text>
+  <text x="636" y="190" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Needs: delegate key + account ID + relayer URL</text>
+  <text x="636" y="220" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Storage: local + encrypted Walrus blobs</text>
+  <text x="636" y="250" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Redaction + gate before MemWal upload</text>
+  <text x="636" y="300" font-family="Inter, sans-serif" font-size="14" fill="#e2e8f0">Best for: backup, verifiable durable layer</text>
+  </g>
+  <g transform="translate(0,2400)">
+
+  <rect width="1200" height="400" fill="#0a0a0a"/>
+  <text x="64" y="48" font-family="Inter, sans-serif" font-size="12" letter-spacing="3" fill="#00f5ff">QUICK START</text>
+  <rect x="64" y="80" width="1072" height="56" rx="8" fill="#1a1a1a" stroke="#334155" stroke-width="1"/>
+  <text x="84" y="114" font-family="JetBrains Mono, monospace" font-size="14" fill="#00f5ff">npx -y @memwalpp/mcp@0.1.1 --transport stdio</text>
+  <text x="64" y="170" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Cursor / Claude Desktop - mcp.json</text>
+  <rect x="64" y="190" width="1072" height="140" rx="8" fill="#1a1a1a" stroke="rgba(0,245,255,0.15)" stroke-width="1"/>
+  <text x="84" y="218" font-family="JetBrains Mono, monospace" font-size="11" fill="#94a3b8">{</text>
+  <text x="84" y="238" font-family="JetBrains Mono, monospace" font-size="11" fill="#64748b">  &quot;mcpServers&quot;: { &quot;memwal-agent-memory&quot;: {</text>
+  <text x="84" y="258" font-family="JetBrains Mono, monospace" font-size="11" fill="#64748b">    &quot;command&quot;: &quot;npx&quot;,</text>
+  <text x="84" y="278" font-family="JetBrains Mono, monospace" font-size="11" fill="#64748b">    &quot;args&quot;: [&quot;-y&quot;, &quot;@memwalpp/mcp@0.1.1&quot;, &quot;--transport&quot;, &quot;stdio&quot;],</text>
+  <text x="84" y="298" font-family="JetBrains Mono, monospace" font-size="11" fill="#64748b">    &quot;env&quot;: { &quot;MEMWAL_NAMESPACE&quot;: &quot;cursor&quot;, &quot;MEMWAL_MCP_DATA_DIR&quot;: &quot;${userHome}/.memwal-agent-memory/mcp&quot; }</text>
+  <text x="84" y="318" font-family="JetBrains Mono, monospace" font-size="11" fill="#64748b">  }}</text>
+  <text x="84" y="338" font-family="JetBrains Mono, monospace" font-size="11" fill="#94a3b8">}</text>
+  <line x1="64" y1="360" x2="1136" y2="360" stroke="#1e293b" stroke-width="1"/>
+  <text x="64" y="388" font-family="Inter, sans-serif" font-size="12" fill="#64748b">github.com/Olympusxvn/memwal-agent-memory | npmjs.com/package/@memwalpp/mcp | MIT</text>
+  </g>
+</svg>

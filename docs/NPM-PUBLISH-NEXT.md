@@ -1,26 +1,29 @@
 # Publish @memwalpp/mcp to npm — completed
 
-**Status:** **Done** (2026-06-18)
+**Status:** **Done**
 
-| Step | Result |
-|------|--------|
-| npm org `@memwalpp` | Created — owner `olympusxvn` |
-| Publish `@memwalpp/mcp@0.1.0` | https://www.npmjs.com/package/@memwalpp/mcp |
-| Verify install | `npx -y @memwalpp/mcp@0.1.0 --transport stdio` |
-| Cursor Marketplace | Publisher application **submitted** — review pending |
+| Version | Date | Notes |
+|---------|------|--------|
+| `@memwalpp/mcp@0.1.0` | 2026-06-18 | Initial npm bundle (9 tools) |
+| `@memwalpp/mcp@0.1.1` | 2026-06-27 | **`saveArtifact`**, 10 tools, Walrus Track bundle |
+
+**Registry:** https://www.npmjs.com/package/@memwalpp/mcp  
+**Plugin pin (v0.1.12):** `npx -y @memwalpp/mcp@0.1.1 --transport stdio` in [mcp.json](../mcp.json)
 
 ## Verify anytime
 
 ```bash
 npm view @memwalpp/mcp version
-npx -y @memwalpp/mcp@0.1.0 --transport stdio
+# → 0.1.1
+
+npx -y @memwalpp/mcp@0.1.1 --transport stdio
 ```
 
-## After Marketplace approval
+## After Marketplace approval / re-index
 
-1. Announce listing on upstream [memwal-agent-memory README](https://github.com/Olympusxvn/memwal-agent-memory)
-2. Monitor [plugin Issues](https://github.com/Olympusxvn/cursor-plugin-memwal-agent-memory/issues)
-3. Request **re-index** when bumping `plugin.json` / `mcp.json` versions
+1. Bump [plugin.json](../.cursor-plugin/plugin.json) when changing MCP pin or plugin assets
+2. Request **re-index** at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish)
+3. Monitor [plugin Issues](https://github.com/Olympusxvn/cursor-plugin-memwal-agent-memory/issues)
 
 ## Local dev (optional)
 

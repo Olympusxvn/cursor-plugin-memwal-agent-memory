@@ -94,7 +94,7 @@ Ask:
 
 1. Would I trust this plugin on a clean laptop with no secrets in repo?
 2. Does README match what MCP actually does?
-3. Can a reviewer run `npx` and get 9 tools in 5 minutes?
+3. Can a reviewer run `npx` and get 10 tools in 5 minutes?
 4. Are privacy flows honest for Pro Local **and** Walrus Sync?
 
 If any answer is **no**, fix before submit.

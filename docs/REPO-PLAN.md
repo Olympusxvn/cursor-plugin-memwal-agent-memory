@@ -54,12 +54,12 @@ cursor-plugin-memwal-agent-memory/
 
 ## Critical prerequisite — npm publish
 
-**Status (2026-06-18): `@memwalpp/mcp@0.1.0` is live on npm.**
+**Status (2026-06-18): `@memwalpp/mcp@0.1.1` is live on npm.**
 
 Marketplace users run:
 
 ```bash
-npx -y @memwalpp/mcp@0.1.0 --transport stdio
+npx -y @memwalpp/mcp@0.1.1 --transport stdio
 ```
 
 Verify after upstream bumps:
@@ -72,7 +72,7 @@ npx -y @memwalpp/mcp@<pin> --transport stdio
 ### Publish sequence (upstream monorepo)
 
 1. Bundle or publish workspace packages per [npm-publish.md](https://github.com/Olympusxvn/memwal-agent-memory/blob/main/docs/product/npm-publish.md)
-2. Verify: `npx -y @memwalpp/mcp@0.1.0 --transport stdio`
+2. Verify: `npx -y @memwalpp/mcp@0.1.1 --transport stdio`
 3. Tag upstream release `mcp-v0.1.0`
 4. Pin version in this plugin's `mcp.json` (exact semver)
 
@@ -95,7 +95,7 @@ gh repo create Olympusxvn/cursor-plugin-memwal-agent-memory --public --source=. 
 1. Copy plugin to `~/.cursor/plugins/local/memwal-agent-memory/`
 2. Build upstream MCP: `pnpm --filter @memwalpp/mcp build` in memwal-agent-memory clone
 3. Copy `mcp.dev.json` → `mcp.json` and replace `REPO_ROOT` with your monorepo path
-4. Reload Cursor → verify 9 tools → smoke test remember/recall
+4. Reload Cursor → verify 10 tools → smoke test remember/recall
 5. Restore production `mcp.json` before marketplace release bumps
 
 ---

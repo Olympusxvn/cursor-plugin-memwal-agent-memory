@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <rect width="1200" height="400" fill="#0a0a0a"/>
+  <text x="64" y="48" font-family="Inter, sans-serif" font-size="12" letter-spacing="3" fill="#00f5ff">TIERS</text>
+  <rect x="64" y="80" width="520" height="280" rx="12" fill="#141414" stroke="rgba(0,245,255,0.2)" stroke-width="1"/>
+  <text x="84" y="120" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#00f5ff">Pro Local</text>
+  <text x="84" y="150" font-family="Inter, sans-serif" font-size="13" fill="#64748b">default tier</text>
+  <text x="84" y="190" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Needs: Node 20+ only</text>
+  <text x="84" y="220" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Storage: ~/.memwal-agent-memory/mcp</text>
+  <text x="84" y="250" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Offline: full remember / recall / search</text>
+  <text x="84" y="300" font-family="Inter, sans-serif" font-size="14" fill="#e2e8f0">Best for: daily Cursor / Claude coding</text>
+  <rect x="616" y="80" width="520" height="280" rx="12" fill="#141414" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="636" y="120" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#a78bfa">+ Walrus Sync</text>
+  <text x="636" y="150" font-family="Inter, sans-serif" font-size="13" fill="#64748b">optional durable tier</text>
+  <text x="636" y="190" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Needs: delegate key + account ID + relayer URL</text>
+  <text x="636" y="220" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Storage: local + encrypted Walrus blobs</text>
+  <text x="636" y="250" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Redaction + gate before MemWal upload</text>
+  <text x="636" y="300" font-family="Inter, sans-serif" font-size="14" fill="#e2e8f0">Best for: backup, verifiable durable layer</text>
+</svg>

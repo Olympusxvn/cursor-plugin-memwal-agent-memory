@@ -46,7 +46,7 @@ let transport;
 try {
   transport = new StdioClientTransport({
     command: "npx",
-    args: ["-y", "@memwalpp/mcp@0.1.0", "--transport", "stdio"],
+    args: ["-y", "@memwalpp/mcp@0.1.1", "--transport", "stdio"],
     env,
     stderr: "pipe",
   });

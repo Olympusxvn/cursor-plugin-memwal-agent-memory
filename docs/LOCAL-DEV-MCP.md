@@ -1,6 +1,6 @@
 # Local dev MCP config
 
-Use this when developing or debugging the **upstream** `@memwalpp/mcp` package from a monorepo clone. Marketplace and end users should use production `mcp.json` (`npx -y @memwalpp/mcp@0.1.0`).
+Use this when developing or debugging the **upstream** `@memwalpp/mcp` package from a monorepo clone. Marketplace and end users should use production `mcp.json` (`npx -y @memwalpp/mcp@0.1.1`).
 
 1. Build upstream bundle:
 
@@ -17,7 +17,7 @@ pnpm --filter @memwalpp/mcp build
 
 ```json
 "command": "npx",
-"args": ["-y", "@memwalpp/mcp@0.1.0", "--transport", "stdio"]
+"args": ["-y", "@memwalpp/mcp@0.1.1", "--transport", "stdio"]
 ```
 
 See also [docs/NPM-PUBLISH-NEXT.md](./NPM-PUBLISH-NEXT.md) for npm publish status.

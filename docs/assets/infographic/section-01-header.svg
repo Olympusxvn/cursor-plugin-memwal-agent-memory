@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#00f5ff" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="400" fill="#0a0a0a"/>
+  <circle cx="120" cy="140" r="36" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.6"/>
+  <circle cx="120" cy="140" r="14" fill="url(#accent)" opacity="0.9"/>
+  <text x="180" y="130" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="700" fill="url(#accent)">MemWal Hybrid MCP Server</text>
+  <text x="180" y="175" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#94a3b8">Hybrid Memory Layer for AI Agents</text>
+  <line x1="64" y1="210" x2="480" y2="210" stroke="url(#accent)" stroke-width="2"/>
+  <text x="64" y="260" font-family="JetBrains Mono, monospace" font-size="14" fill="#64748b">npm @memwalpp/mcp@0.1.1</text>
+  <text x="320" y="260" font-family="Inter, sans-serif" font-size="14" fill="#64748b">Node 20+</text>
+  <text x="440" y="260" font-family="Inter, sans-serif" font-size="14" fill="#64748b">stdio | HTTP</text>
+  <rect x="920" y="100" width="160" height="40" rx="20" fill="#141414" stroke="rgba(0,245,255,0.3)" stroke-width="1" filter="url(#glow)"/>
+  <text x="1000" y="126" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#00f5ff">9 MCP Tools</text>
+  <text x="64" y="330" font-family="Inter, sans-serif" font-size="16" fill="#e2e8f0">Persistent project memory - fast on your machine first, durable on Walrus when you choose.</text>
+</svg>

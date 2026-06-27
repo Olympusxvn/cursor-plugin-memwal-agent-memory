@@ -16,7 +16,7 @@ Related: [PLUGINS-REFERENCE-AUDIT.md](./PLUGINS-REFERENCE-AUDIT.md) · upstream 
 | **Transport** | **Pass** — `stdio` via `npx` (local, single-user) |
 | **`mcp.json` shape** | **Pass** — command, args, env, interpolation |
 | **Secrets** | **Pass** — none in repo; Walrus keys user MCP env only |
-| **npm supply chain** | **Pass** — pinned `@memwalpp/mcp@0.1.0` on public registry |
+| **npm supply chain** | **Pass** — pinned `@memwalpp/mcp@0.1.1` on public registry |
 | **Protocol surface** | **Pass** — 9 MCP **Tools** (v1 scope) |
 | **Remote / OAuth** | **N/A** — plugin ships stdio only (correct for Marketplace default) |
 
@@ -46,7 +46,7 @@ Marketplace users get **stdio** — matches Cursor doc recommendation for local 
     "memwal-agent-memory": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@memwalpp/mcp@0.1.0", "--transport", "stdio"],
+      "args": ["-y", "@memwalpp/mcp@0.1.1", "--transport", "stdio"],
       "env": {
         "MEMWAL_NAMESPACE": "cursor",
         "MEMWAL_MCP_DATA_DIR": "${userHome}/.memwal-agent-memory/mcp"
@@ -90,9 +90,9 @@ Marketplace users get **stdio** — matches Cursor doc recommendation for local 
 
 ## 4. Protocol capabilities (reference § Protocol and extension support)
 
-| Feature | Cursor support | `@memwalpp/mcp@0.1.0` | Plugin disclosure |
+| Feature | Cursor support | `@memwalpp/mcp@0.1.1` | Plugin disclosure |
 |---------|----------------|------------------------|-------------------|
-| **Tools** | Supported | **9 tools** | Pass — core value |
+| **Tools** | Supported | **10 tools** (incl. `saveArtifact`) | Pass — core value |
 | Prompts | Supported | Not exposed | N/A v1 |
 | Resources | Supported | Not exposed | N/A v1 |
 | Roots | Supported | Not exposed | N/A v1 |
@@ -134,7 +134,7 @@ Documented in README, PRIVACY, memwal-setup skill.
 
 | Topic | Guidance for users |
 |-------|-------------------|
-| Tool discovery | Settings → MCP → green server; 9 tools listed |
+| Tool discovery | Settings → MCP → green server; 10 tools listed |
 | Tool approval | Default ask-before-run; user may allowlist in `permissions.json` |
 | Debugging | Output panel → **MCP Logs** |
 | Disable server | Settings → MCP toggle (troubleshooting) |
@@ -153,7 +153,7 @@ When `@memwalpp/mcp` patches release:
 3. Bump `plugin.json` version + CHANGELOG
 4. Request Marketplace re-index
 
-Current pin: **`@memwalpp/mcp@0.1.0`**
+Current pin: **`@memwalpp/mcp@0.1.1`** (plugin v0.1.12)
 
 ---
 
@@ -181,7 +181,7 @@ Current pin: **`@memwalpp/mcp@0.1.0`**
 |----|-------------|--------|
 | C1–C7 | MCP configuration section | ☑ |
 | E4 | npm fetch only pinned package | ☑ |
-| B6 | 9 tools, no chain writes | ☑ |
+| B6 | 10 tools, no chain writes | ☑ |
 
 ---
 

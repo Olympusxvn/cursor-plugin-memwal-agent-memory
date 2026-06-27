@@ -3,7 +3,7 @@
 **Compliance row:** [COMPLIANCE-CHECKLIST.md](./COMPLIANCE-CHECKLIST.md) §G4 (+ Walrus Sync)  
 **Plugin version:** 0.1.9  
 **Date:** 2026-06-18  
-**MCP package:** `@memwalpp/mcp@0.1.0` via `npx` (same as production `mcp.json`)
+**MCP package:** `@memwalpp/mcp@0.1.1` via `npx` (same as production `mcp.json`)
 
 ## Result — PASS
 

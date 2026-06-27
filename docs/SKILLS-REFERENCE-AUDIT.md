@@ -122,7 +122,7 @@ Once the Marketplace plugin is enabled, skills load from the plugin package — 
 | Gap | Fix |
 |-----|-----|
 | Stale troubleshooting (`mcp.local.example.json`) | → `mcp.dev.json` + live npm URL |
-| Troubleshooting implied npm unpublished | Updated for `@memwalpp/mcp@0.1.0` live |
+| Troubleshooting implied npm unpublished | Updated for `@memwalpp/mcp@0.1.1` live |
 
 ---
 

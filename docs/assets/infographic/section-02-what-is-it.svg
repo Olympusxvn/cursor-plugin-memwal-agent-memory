@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#a78bfa" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="400" fill="#0a0a0a"/>
+  <text x="64" y="56" font-family="Inter, sans-serif" font-size="12" letter-spacing="3" fill="#00f5ff">WHAT IS IT?</text>
+  <text x="64" y="110" font-family="Inter, sans-serif" font-size="22" fill="#ffffff">Hybrid = <tspan fill="#00f5ff">Local-first</tspan> + <tspan fill="#a78bfa">Walrus Verifiable</tspan></text>
+  <text x="64" y="150" font-family="Inter, sans-serif" font-size="16" fill="#94a3b8">Wraps Mysten MemWal SDK | Complements official @mysten-incubation/memwal-mcp</text>
+  <rect x="64" y="190" width="500" height="160" rx="12" fill="#141414" stroke="rgba(0,245,255,0.15)" stroke-width="1" filter="url(#glow)"/>
+  <text x="84" y="230" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#00f5ff">Local-first</text>
+  <text x="84" y="260" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">SQLite at ~/.memwal-agent-memory/mcp</text>
+  <text x="84" y="285" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Instant remember / recall / search</text>
+  <text x="84" y="310" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">No keys required (Pro Local tier)</text>
+  <rect x="620" y="190" width="516" height="160" rx="12" fill="#141414" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#glow)"/>
+  <text x="640" y="230" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#a78bfa">Walrus Verifiable</text>
+  <text x="640" y="260" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Encrypted blobs via MemWal relayer</text>
+  <text x="640" y="285" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Explicit sync - not auto-upload</text>
+  <text x="640" y="310" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Layered verify + lineage + proof</text>
+</svg>
