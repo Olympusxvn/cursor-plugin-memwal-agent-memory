@@ -43,9 +43,10 @@ Both servers target a **full agent memory surface**, but tool counts differ: **8
 | — | — | — | `verify` | Layered proof — local / Walrus blob / optional chain read | **Memwalpp only** |
 | — | — | — | `getLineage` | Ancestry graph — local + optional Sui pack lineage | **Memwalpp only** |
 | — | — | — | `getVersionHistory` | Version timeline from `metadata.versionHistory` | **Memwalpp only** |
+| — | — | — | `saveArtifact` | JSON/markdown report with `artifact: true` metadata | **Memwalpp only** |
 | — | — | — | `softDelete` | Tombstone local row (`metadata.deleted=1`) | **Memwalpp only** |
 
-**Summary:** Official **8** tools = Walrus memory as a service (login, cloud write/recall/analyze/restore). Memwalpp **9** tools = hybrid memory OS for agents (local speed, gated `sync`, search, verify, lineage, history). Memwalpp **wraps** the MemWal SDK; it does not fork Walrus Memory.
+**Summary:** Official **8** tools = Walrus memory as a service (login, cloud write/recall/analyze/restore). Memwalpp **10** tools = hybrid memory OS for agents (local speed, gated `sync`, search, verify, lineage, history, artifacts). Memwalpp **wraps** the MemWal SDK; it does not fork Walrus Memory.
 
 ### Agent workflow map
 
